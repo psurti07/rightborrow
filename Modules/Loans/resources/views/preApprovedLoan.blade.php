@@ -93,7 +93,7 @@ body {
                     <div class="offer-card locked">
                     @endif
                         <div class="card {{ $isExpired ? 'card-content' : '' }} h-md-100">
-                            <div class="card-header d-flex justify-content-center align-items-center border-0" style="{{ $loop->index != 0 ? 'background: rgba(0, 0, 0, 0) linear-gradient(120deg, #f94, #D9455A) 0 0 no-repeat;' : 'background: rgba(0, 0, 0, 0) linear-gradient(120deg, #198b8c, #0e5281) 0 0 no-repeat;' }}min-height:20px!important">
+                            <div class="card-header d-flex justify-content-center align-items-center border-0" style="{{ $loop->index != 0 ? 'background: rgba(0, 0, 0, 0) linear-gradient(120deg, #f94, #D9455A) 0 0 no-repeat;' : 'background: rgba(0, 0, 0, 0) linear-gradient(120deg, #cfac53, #1b4577) 0 0 no-repeat;' }}min-height:20px!important">
                                 <h3 class="card-title">
                                     <span class="card-label fw-semibold fs-base text-light">{{ $loop->index == 0 ? 'Highly Recommended' : 'Pre-Approved Offers' }}</span>
                                 </h3>

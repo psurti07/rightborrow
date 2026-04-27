@@ -13,8 +13,8 @@
     }
 
     .radio:checked {
-        background: #0e5281;
-        border-color: #0e5281;
+        background: #1b4577;
+        border-color: #1b4577;
     }
 
     .owl-carousel .owl-item img {
@@ -63,7 +63,7 @@
 </style>
 @endpush
 @section('content')
-<section id="hero-202" class="bg--white-100 bg--fixed hero-section">
+<section class="bg--white-100 bg--fixed hero-section pt-100 pb-80">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form">
@@ -140,14 +140,14 @@
 </section>
 
 <!-- Affiliate NBFCs section starts -->
-<section id="integrations-2" class="pt-0 pb-40 integrations-section">
+<section id="integrations-2" class="pt-0 pb-80 integrations-section">
     <div class="container">
         <div class="r-12 text-center">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-12">
-                    <div class="section-title mb-50">
-                        <h2 class="s-28">Trusted by the <span class="color--green-500">Best in the Industry</span></h2>
-                        <p class="s-16 color--grey">Partnering with the best NBFCs to provide the best for our customers.</p>
+                    <div class="section-title mb-40">
+                        <h2 class="s-28 mb-5">Trusted by the <span class="color--green-500">Best in the Industry</span></h2>
+                        <p class="s-16 color--grey mt-0">Partnering with the best NBFCs to provide the best for our customers.</p>
                     </div>
                 </div>
             </div>
@@ -168,13 +168,13 @@
 </section>
 <!-- Affiliate NBFCs section ends -->
 
-<section id="features-6" class="py-80 features-section division">
+<section id="features-6" class="pt-0 pb-80 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-50">
-                    <h2 class="s-28">Why <span class="color--green-500">Right Borrow</span></h2>
-                    <p class="s-16 color--grey">Here's What Sets Our Platform Apart</p>
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">Why <span class="color--green-500">RightBorrow</span></h2>
+                    <p class="s-16 color--grey mt-0">Here's What Sets Our Platform Apart</p>
                 </div>
             </div>
         </div>
@@ -238,13 +238,13 @@
 </section>
 
 <!-- Testimonioals section starts -->
-<section id="reviews-1" class="py-80 shape--06 reviews-section">
+<section id="reviews-1" class="pt-0 pb-80 shape--06 reviews-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
-                <div class="section-title mb-50">
-                    <h2 class="s-28">What Our <span class="color--green-500">Customer Says</span></h2>
-                    <p class="s-16 color--grey">Hear directly from our customers about their experiences with us.</p>
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">What Our <span class="color--green-500">Customer Says</span></h2>
+                    <p class="s-16 color--grey mt-0">Hear directly from our customers about their experiences with us.</p>
                 </div>
             </div>
         </div>
@@ -266,14 +266,13 @@
                 <div class="form-holder">
                     <div class="contact-form-notice">
                         <p class="s-14">
-                            <strong>Important Disclosure :</strong> Repayment tenure may extend up to <strong>72 months</strong>, with <strong>annual interest rates typically ranging between 11.5% – 36%</strong>, depending on the applicant’s profile and the policies of the respective lending partner.
-                        </p>
-                        <p class="s-14">Processing charges may apply up to <strong>2%</strong> of the approved amount.</p>
-                        <p class="s-14">
-                            <strong>Illustration:</strong> For a credit amount of <strong>₹1,00,000</strong> at an <strong>interest rate of 11.5% per annum</strong> for a tenure of <strong>6 years</strong>, along with a <strong> 2% processing charge</strong>, the approximate <strong>APR may be around 12.26%</strong>.
+                            <strong>Important Disclosure : </strong> AI Loans Private Limited is a service provider that connects users with third-party banks and NBFCs and does not provide loans directly. The repayment tenure for personal loans typically ranges from a minimum of 6 months to a maximum of 60 months (5 years), depending on the lender. The maximum Annual Percentage Rate (APR) can go up to 34.5% per annum, inclusive of applicable charges, depending on the applicant’s profile and lender policies.
                         </p>
                         <p class="s-14">
-                            All figures are indicative. Actual terms including approval, interest rate, tenure, processing charges, and disbursement are determined solely by the respective lending partner based on their eligibility criteria, internal policies, and regulatory guidelines.
+                            For example, if a user takes a loan of ₹5,00,000 at an interest rate of 12% per annum for 60 months, the processing fee may be up to 2% (₹10,000), the EMI would be approximately ₹11,122, the total interest payable would be around ₹1,67,320, and the total repayment amount would be approximately ₹6,67,320. All figures are indicative. Actual loan terms may vary depending on eligibility and lender criteria.
+                        </p>
+                        <p class="s-14">
+                            <strong>Disclaimer : </strong>AI Loans Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify all details and read the terms and conditions of the respective lender before proceeding.
                         </p>
                         <p class="s-14">
                             <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile: {{ env('COMPANY_MOBILE') }} | Email: {{ env('INFO_EMAIL') }}

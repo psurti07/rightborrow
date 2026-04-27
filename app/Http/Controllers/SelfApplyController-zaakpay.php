@@ -37,6 +37,7 @@ use App\Http\Controllers\CipherPayController as CipherPay;
 
 class SelfApplyController extends Controller
 {
+    public $lifetime;
 
     public function __construct()
     {

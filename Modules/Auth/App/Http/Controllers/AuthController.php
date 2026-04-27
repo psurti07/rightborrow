@@ -76,7 +76,7 @@ class AuthController extends Controller
                 'password' => Session::get('user_password'),
                 'isDelete' => 0,
             ];
-    
+            log::info($credentials);
             $redirectUrl = '/loans/pre-approved-loans';
         }
     
@@ -111,8 +111,12 @@ class AuthController extends Controller
                 
                 /* send forget message starts */
                 $msg = DB::table('sms_list')->where('type',1)->where('slug','forgot_password')->first()->message;
+                Log::info('SMS first message : ' . $msg);
                 if($msg != '#'){
-                    $msg = str_ireplace('{#varpassword#}',$newPassword,$msg);
+                    // $msg = str_ireplace('{#varpassword#}',$newPassword,$msg);
+                    $msg = str_ireplace('{#var#}', $fetch->first_name, $msg);
+                    $msg = str_ireplace('{#varpassword#}', $newPassword, $msg);
+                    Log::info('SMS replace message : ' . $msg);
                     $sendertype = (($fetch->acc_type == 2) ? 'la-senderid' : (($fetch->acc_type == 3) ? 'lat-senderid' : 'sa-senderid'));
                     $panel = (($fetch->acc_type == 2) ? 'hire' : (($fetch->acc_type == 3) ? 'assistant' : 'self'));
                     $senderId = DB::table('info_pages')->where('slug',$sendertype)->first()->content;

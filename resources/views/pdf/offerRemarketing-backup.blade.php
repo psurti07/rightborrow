@@ -88,9 +88,9 @@
                 height: 100%;
                 background-repeat: repeat;
                 background-position: center top;
-                background-image: url(https://rightborrow.com/uat/assets/images/mail-bgm.png);
+                background-image: url(https://rightborrow.com/assets/images/mail-bgm.png);
                 background-color: #f9f9f9;
-                " background="https://rightborrow.com/uat/front/images/bg-01.webp">
+                " background="https://rightborrow.com/front/images/bg-01.webp">
                 <tbody>
                     <tr>
                         <td class="es-m-margin" valign="top" style="padding: 0; margin: 0;">
@@ -130,9 +130,9 @@
                                                                                             class="es-m-txt-c"
                                                                                             style="padding: 0; margin: 0; padding-top: 5px; font-size: 0;">
                                                                                             <a target="_blank"
-                                                                                                href="https://rightborrow.com/uat/"
+                                                                                                href="https://rightborrow.com/"
                                                                                                 style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: underline; color: #000f26; font-size: 14px;">
-                                                                                            <img src="https://rightborrow.com/uat/front/images/logo/logo.png"
+                                                                                            <img src="https://rightborrow.com/front/images/logo/logo.png"
                                                                                                 alt="RightBorrow"
                                                                                                 style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
                                                                                                 width="190"

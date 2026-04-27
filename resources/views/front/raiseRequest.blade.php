@@ -22,9 +22,9 @@
                     <div class="txt-block left-column">
                         <span class="section-id"></span>
                         <h2 class="w-700">Raise a <span class="color--green-500">Request</span></h2>
-                        <p class="p-md w-400">
+                        <!-- <p class="p-md w-400">
                             Have a query? Raise a request with RightBorrow and get quick assistance for all your loan needs.
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row justify-content-center">
             
-            <div class="col-md-6 col-lg-6 col-sm-12 align-items-center justify-content-center m-auto">
+            <div class="col-md-6 col-lg-6 col-sm-12 align-items-center justify-content-center m-auto mt-0">
                 <div id="contacts" class="contacts-section division">
                     <div class="card">
                         <div class="card-body">
@@ -133,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="col-md-6 col-lg-6 col-sm-12 mt-lg-0 mt-35">
                 <div class="faqs-section">
                     <div class="faqs-3-questions">
                         <h4 class="mb-20 text-center">Frequently Asked Questions</h4>

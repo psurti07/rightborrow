@@ -8501,7 +8501,7 @@ fieldset:disabled .btn {
 
 .border-primary {
     --bs-border-opacity: 1;
-    border-color: #228688 !important
+    border-color: #1b4577 !important
 }
 
 .border-secondary {
@@ -8550,7 +8550,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary-subtle {
-    border-color: #228688 !important
+    border-color: #1b4577 !important
 }
 
 .border-secondary-subtle {

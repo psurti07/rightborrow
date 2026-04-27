@@ -22,7 +22,7 @@
 @endpush
 @section('content')
     <!-- main section starts -->
-    <section id="hero-201" class="bg--white-100 bg--fixed hero-section">
+    <section class="bg--white-100 bg--fixed hero-section personal-details-form pt-100 pb-80 min-vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <!-- <div class="col-md-6 col-lg-6">
@@ -144,7 +144,9 @@
                         },
                         success: function (result) {
                             $(this).attr("disabled", false);
+                            console.log(result);
                             if (result.type === 'SUCCESS') {
+                                resetProcessButton();
                                 window.location.href = `{{ route('self.apply.personal.details') }}`;
                             } else {
                                 toastr.error(result.message);
@@ -166,5 +168,11 @@
                 }
             });
         })
+
+        function resetProcessButton() {
+            let $btn = $('#processNowBtn');
+            $btn.prop('disabled', false);
+            $btn.html('Process Now');
+        }
     </script>
 @endpush

@@ -10,10 +10,10 @@
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-12 text-center">
-                    <div class="txt-block left-column">
+                    <div class="left-column">
                         <span class="section-id"></span>
-                        <h2 class="w-700">Career <span class="color--green-500">with us</span></h2>
-                        <p class="p-md w-400">Growth. Fun. Excitement. Challenges – all in one place.</p>
+                        <h2 class="w-700 mb-5">Career <span class="color--green-500">with us</span></h2>
+                        <p class="p-md w-400 mt-0">Growth. Fun. Excitement. Challenges – all in one place.</p>
                     </div>
                 </div>
             </div>
@@ -21,14 +21,14 @@
     </div>
 </section>
 
-<section id="join-our-team" class="pt-100 pb-60 careers-section">
+<section id="join-our-team" class="py-80 careers-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-50">
+                <div class="section-title mb-40">
                     @if($data->isNotEmpty())
-                    <h2 class="">Current Job <span class="color--green-500">Vacancies</span></h2>
-                    <p class="color--grey">See where you fit in.</p>
+                    <h2 class="s-28 mb-5">Current Job <span class="color--green-500">Vacancies</span></h2>
+                    <p class="color--grey mt-0">See where you fit in.</p>
                     @else
                     <h2 class="">Sorry!!</h2>
                     <p class="color--grey">We currently do not have any vacancies.</p>
@@ -56,22 +56,22 @@
 <hr class="divider">
 
 <!-- benefits and perks -->
-<section id="features-11" class="py-80 features-section division">
+<section id="features-11" class="py-80 features-section division bg--green-100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-70">
-                    <h2 class="s-28">Plenty of <span class="color--green-500">Perks!</span></h2>
-                    <p class="s-16 color--grey">Become a part of a workforce that’s creating milestones. Every day!</p>
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">Plenty of <span class="color--green-500">Perks!</span></h2>
+                    <p class="s-16 color--grey mt-0">Become a part of a workforce that’s creating milestones. Every day!</p>
                 </div>
             </div>
         </div>
         <div class="fbox-wrapper">
-            <div class="row row-cols-1 row-cols-md-2 rows-2 gx-2 gy-2">
+            <div class="row row-cols-1 row-cols-md-2 rows-2 g-4">
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-profits color--theme"></span>
                                 </div>
@@ -84,9 +84,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-workflow-2 color--theme"></span>
                                 </div>
@@ -99,9 +99,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-prioritize color--theme"></span>
                                 </div>
@@ -114,9 +114,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-money color--theme"></span>
                                 </div>
@@ -129,9 +129,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-fast-food color--theme"></span>
                                 </div>
@@ -144,9 +144,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8">
+                    <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50">
+                            <div class="fbox-ico ico-50 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-diamond color--theme"></span>
                                 </div>

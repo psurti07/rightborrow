@@ -18,9 +18,9 @@
                 height: 100%;
                 background-repeat: repeat;
                 background-position: center top;
-                background-image: url(https://rightborrow.com/uat/assets/images/mail-bgm.png);
+                background-image: url(https://rightborrow.com/assets/images/mail-bgm.png);
                 background-color: #f9f9f9;
-                " background="https://rightborrow.com/uat/front/images/bg-01.webp">
+                " background="https://rightborrow.com/public/front/images/bg-01.webp">
         <tbody>
         <tr>
             <td class="es-m-margin" valign="top" style="padding: 0; margin: 0;">
@@ -60,12 +60,12 @@
                                                                 class="es-m-txt-c"
                                                                 style="padding: 0; margin: 0; padding-top: 5px; font-size: 0;">
                                                                 <a target="_blank"
-                                                                   href="https://rightborrow.com/uat/"
+                                                                   href="https://rightborrow.com/"
                                                                    style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: underline; color: #000f26; font-size: 14px;">
-                                                                    <img src="https://rightborrow.com/uat/front/images/logo/logo.png"
+                                                                    <img src="https://rightborrow.com/public/front/images/logo/logo.png"
                                                                          alt="RightBorrow"
                                                                          style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                         width="190"
+                                                                         width="150" height="50"
                                                                          title="RightBorrow">
                                                                 </a>
                                                             </td>
@@ -110,9 +110,9 @@
                                                         <tbody>
                                                         <tr>
                                                             <td align="center"
-                                                                style="padding: 20px; margin: 0; line-height: 2rem;    background-color: #b4c7d5;border-top-right-radius:12px;border-top-left-radius:12px;">
+                                                                style="padding: 20px; margin: 0; line-height: 2rem;    background-color: #f3f8ff;border-top-right-radius:12px;border-top-left-radius:12px;">
                                                                 <p
-                                                                    style="font-size:2.2rem;color:#0e5281;font-weight:600">
+                                                                    style="font-size:2.2rem;color:#1b4577;font-weight:600">
                                                                     Congratulations !
                                                                 </p>
                                                             </td>
@@ -154,23 +154,23 @@
                                         style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;">
                                         <table cellpadding="0" cellspacing="0" class="es-left"
                                                align="left"
-                                               style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #b4c7d5;border: 1px solid #0e5281;  border-radius: 12px; display: block;">
+                                               style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #f3f8ff;border: 1px solid #1b4577;  border-radius: 12px; display: block;">
                                             <tbody>
                                             <tr>
                                                 <td class="es-m-p20b" align="left"
                                                     style="padding: 0; margin: 0; width: 600px;">
-                                                    <h3 style="text-align:center; color: #0e5281;">
+                                                    <h3 style="text-align:center; color: #1b4577;">
                                                         Order Details
                                                     </h3>
                                                     <hr>
                                                     <table cellpadding="0" cellspacing="0"
                                                            width="100%" bgcolor="#ffffff"
-                                                           style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: separate;border-spacing: 0; border-radius: 15px;/* border: 1px solid #0e5281; */ background-color: transparent;"
+                                                           style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: separate;border-spacing: 0; border-radius: 15px;/* border: 1px solid #1b4577; */ background-color: transparent;"
                                                            role="presentation">
                                                         <tbody>
                                                         <tr>
                                                             <td
-                                                                style="padding:0  20px; margin: 0; line-height: 1.5rem;background-color: #b4c7d5; color:#000;font-size:16px; border-radius: 12px;">
+                                                                style="padding:0  20px; margin: 0; line-height: 1.5rem;background-color: #f3f8ff; color:#000;font-size:16px; border-radius: 12px;">
                                                                 <p style="margin: 0;">Full Name :<span></span>
                                                                 <h5 style="margin:0;">{{ $fullname }}</h5>
                                                                 </p>
@@ -182,7 +182,7 @@
                                                                 </p>
                                                             </td>
                                                             <td align="left"
-                                                                style="padding:0 20px; margin: 0; line-height: 1.5rem;background-color: #b4c7d5;  color:#000;font-size:16px;border-radius: 12px;">
+                                                                style="padding:0 20px; margin: 0; line-height: 1.5rem;background-color: #f3f8ff;  color:#000;font-size:16px;border-radius: 12px;">
                                                                 <p style="margin: 0;">Mobile :
                                                                 <h5 style="margin: 0;">+91&nbsp;{{ $mobile }}</h5>
                                                                 </p>
@@ -258,19 +258,19 @@
                                                                                                 ">
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/privacy-policy">
+                                                                       href="https://rightborrow.com/privacy-policy">
                                                                         Privacy Policy
                                                                     </a>
                                                                     &nbsp; | &nbsp;
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/terms-and-conditions">
+                                                                       href="https://rightborrow.com/terms-and-conditions">
                                                                         Terms &amp; Conditions
                                                                     </a>
                                                                     &nbsp; | &nbsp;
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/raise-request">
+                                                                       href="https://rightborrow.com/raise-request">
                                                                         Raise a request
                                                                     </a>
                                                                     &nbsp; | &nbsp;

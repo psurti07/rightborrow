@@ -18,9 +18,9 @@
                 height: 100%;
                 background-repeat: repeat;
                 background-position: center top;
-                background-image: url(https://rightborrow.com/uat/assets/images/mail-bgm.png);
+                background-image: url(https://rightborrow.com/assets/images/mail-bgm.png);
                 background-color: #f9f9f9;
-                " background="https://rightborrow.com/uat/front/images/bg-01.webp">
+                " background="https://rightborrow.com/public/front/images/bg-01.webp">
         <tbody>
         <tr>
             <td class="es-m-margin" valign="top" style="padding: 0; margin: 0;">
@@ -60,12 +60,12 @@
                                                                 class="es-m-txt-c"
                                                                 style="padding: 0; margin: 0; padding-top: 5px; font-size: 0;">
                                                                 <a target="_blank"
-                                                                   href="https://rightborrow.com/uat/"
+                                                                   href="https://rightborrow.com/"
                                                                    style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: underline; color: #000f26; font-size: 14px;">
-                                                                    <img src="https://rightborrow.com/uat/front/images/logo/logo.png"
+                                                                    <img src="https://rightborrow.com/public/front/images/logo/logo.png"
                                                                          alt="RightBorrow"
                                                                          style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                         width="190"
+                                                                         width="150" height="50"
                                                                          title="RightBorrow">
                                                                 </a>
                                                             </td>
@@ -111,7 +111,7 @@
                                                         <tbody>
                                                         <tr>
                                                             <td align="left"
-                                                                style="padding: 20px; margin: 0; line-height: 1.5rem;background-color: #b4c7d5; border-radius:12px;color:#000;font-size:16px">
+                                                                style="padding: 20px; margin: 0; line-height: 1.5rem;background-color: #f3f8ff; border-radius:12px;color:#000;font-size:16px">
                                                                 <p style="font-size:15px"><strong>Dear {{ $fullname }},</strong></p>
                                                                 <p style="font-size:15px">Your password has been successfully reset.</p>
                                                                 <p style="font-size:15px">
@@ -121,7 +121,7 @@
                                                                 </p>
                                                                 <p>Please visit Your Personalised Portal and login with your new credentials:</p>
                                                                 </p>
-                                                                <a href="https://rightborrow.com/uat/customer/login"
+                                                                <a href="https://rightborrow.com/customer/login"
                                                                    style="display:inline-block;background:#2c2c2c;color:#fff;font-family:Ubuntu,Helvetica,Arial,sans-serif,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:17.5px;margin:0;text-decoration:none;text-transform:none;padding:9px 26px 9px 26px; margin:auto; display:block; width: fit-content; mso-padding-alt:0;border-radius:10px"
                                                                    target="_blank"><span><strong><span
                                                                                 style="font-family:Poppins,sans-serif;font-size:14px">Click
@@ -196,19 +196,19 @@
                                                                                                 ">
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/privacy-policy">
+                                                                       href="https://rightborrow.com/privacy-policy">
                                                                         Privacy Policy
                                                                     </a>
                                                                     &nbsp; | &nbsp;
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/terms-and-conditions">
+                                                                       href="https://rightborrow.com/terms-and-conditions">
                                                                         Terms &amp; Conditions
                                                                     </a>
                                                                     &nbsp; | &nbsp;
                                                                     <a target="_blank"
                                                                        style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #000f26; font-size: 14px;"
-                                                                       href="https://rightborrow.com/uat/raise-request">
+                                                                       href="https://rightborrow.com/raise-request">
                                                                         Raise a request
                                                                     </a>
                                                                     &nbsp; | &nbsp;

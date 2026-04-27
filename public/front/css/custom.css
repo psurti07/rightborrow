@@ -5,7 +5,7 @@
 .navbar-dark .logo-white { display: block; }
 .tra-menu.navbar-dark .scroll .logo-black { display: block; }
 .tra-menu.navbar-dark .scroll .logo-white { display: none; }
-.role-box span,.role-box p  { color: #6c757d!important }
+.role-box span,.role-box p  { color: #000!important }
 .tra-menu.navbar-dark .btn--purple-500 { border-color: #3a3189!important; background-color: #3a3189!important; }
 .tra-menu.navbar-dark .btn--purple-500:hover { color:#fff!important; border-color: #fff!important; background-color: transparent!important; }
 .tra-menu.navbar-dark .scroll .btn--purple-500 { border-color: #3a3189!important; background-color: #3a3189!important; }
@@ -44,7 +44,7 @@
 .section-id{margin-bottom:10px!important;}
 .main-heading{margin-bottom:60px!important;}
 .type1{margin-bottom:15px!important;}
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background: #ffffff!important;border: 5px solid #0e5281 !important; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background: #ffffff!important;border: 5px solid #1b4577 !important; }
 .ui-widget-header{ background:#252525 !important }
 .input-group-text{color: #252525 !important;background-color: #f4f4f4 !important;}
 .custm-box, .custm-box-2{ color: #252525 !important;background-color: #f4f4f4 !important; }
@@ -121,4 +121,13 @@
   transform: rotate(45deg);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   letter-spacing: 1px;
+}
+
+@media screen and (max-width:991px) {
+ .hero-section{
+min-height: auto !important;
+} 
+}
+#join-our-team .role-box:hover span, #join-our-team .role-box:hover p, #join-our-team .role-box:hover h5{
+  color: #fff !important;
 }

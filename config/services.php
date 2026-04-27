@@ -36,4 +36,8 @@ return [
         'sandbox' => env('OPENMONEY_MODE'), // toggle for env
     ],
 
+    'razorpay' => [
+        'key' => env('RAZOR_KEY_ID'),
+        'secret' => env('RAZOR_KEY_SECRET'),
+    ]
 ];

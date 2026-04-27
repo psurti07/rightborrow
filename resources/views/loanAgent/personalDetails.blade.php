@@ -8,9 +8,9 @@
 @endpush
 
 @section('content')
-    <section id="contacts" class="bg--white-100 personal-details-form pb-100 inner-page-hero contacts-section division">
+    <section id="contacts" class="bg--white-100 personal-details-form inner-page-hero contacts-section division min-vh-100 d-flex align-items-center">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-35">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="row">
@@ -142,7 +142,7 @@
                                                     @component('components.ajax-error',['field'=>'state'])@endcomponent
                                                 </div>
                                                 <div class="text-start">
-                                                    <button type="submit" class="s-14 btn btn--theme hover--theme submit" id="submit-btn">Continue</button>
+                                                    <button type="submit" class="s-14 btn btn--theme hover--theme submit w-100" id="submit-btn">Continue</button>
                                                 </div>
                                             </div>
                                         </div>

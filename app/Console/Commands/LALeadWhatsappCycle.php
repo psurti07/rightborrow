@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Services\LALeadWhatsappServices;
+use App\Services\LALeadWhatsappServicesInterakt;
 use Illuminate\Support\Facades\Log;
 
 class LALeadWhatsappCycle extends Command
@@ -27,8 +27,9 @@ class LALeadWhatsappCycle extends Command
      */
     public function handle()
     {
+        Log::info("start : running LA Lead Whatsapp command");
         try {
-            app(LALeadWhatsappServices::class)->run();
+            app(LALeadWhatsappServicesInterakt::class)->run();
         } catch (\Exception $e) {
             Log::error('Error running LA Lead Whatsapp command: ' . $e->getMessage());
             $this->error('Command failed: ' . $e->getMessage());

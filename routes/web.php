@@ -138,6 +138,17 @@ Route::group([
     Route::post('silver-offer-request',[LoanAgentController::class, 'getOffer6'])->name('get.offer6');
 });
 
+Route::get('/razorpay-page', function (Illuminate\Http\Request $request) {
+    return view('pg.razorpay', [
+        'order_id' => $request->order_id,
+        'amount'   => $request->amount,
+        'name'     => $request->name,
+        'email'    => $request->email,
+        'mobile'   => $request->mobile,
+        'returnUrl'=> $request->returnUrl
+    ]);
+})->name('razorpay.page');
+
 Route::group([
     'prefix' => '/offers',
     'as' => 'offer.'
@@ -233,3 +244,5 @@ Route::group([
 Route::get('/paytm/checkout', [PaytmController::class, 'checkout'])->name('paytm.checkout');
 Route::post('/paytm/initiate', [PaytmController::class, 'initiate'])->name('paytm.initiate');
 //Route::post('/paytm/callback', [PaytmController::class, 'callback'])->name('paytm.callback');
+
+
