@@ -13,9 +13,6 @@
                     <div class="txt-block left-column">
                         <span class="section-id"></span>
                         <h2 class="w-700 mb-5">Frequently Asked <span class="color--green-500">Questions</span></h2>
-                        <p class="p-md w-400 mt-0">
-                            It's our fundamental trait to be transparent with our customers!
-                        </p>
                     </div>
                 </div>
             </div>
@@ -32,93 +29,105 @@
                         <ul class="accordion">
                             <li class="accordion-item mb-10">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">1. What are the basic eligibility requirements to apply for an unsecured loan?</h6>
+                                    <h6 class="w-600">1. What can you do with a personal loan?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
                                         <div class="faqs-2-answer">
-                                            <p>Eligibility may vary depending on the lender, but the general criteria are:</p>
-                                            <p><strong>For Salaried Applicants :</strong></p>
-                                            <div class="ps-2">
-                                                <p>&bull; Minimum Age: 21 years</p>
-                                                <p>&bull; Minimum Monthly Salary: ₹15,000 (income should be credited to a bank account)</p>
-                                                <p>&bull; Employment Duration: At least 1 year of work history</p>
-                                            </div>
-                                            <p><strong>For Self-Employed Applicants :</strong></p>
-                                            <div class="ps-2">
-                                                <p>&bull; Minimum Age: 21 years</p>
-                                                <p>&bull; Income Tax Filing: At least 1 year of ITR records</p>
-                                                <p>&bull; Business Duration: Minimum 1 year of operational history</p>
-                                            </div>
-                                            <p>Final eligibility is determined by the lending institution based on their internal policies.</p>
+                                            <p>A personal loan can be used to fund almost any personal financial need, including medical emergencies, education, home improvements, and debt consolidation.</p>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion-item mb-10">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">2. What documents are usually required during the application process?</h6>
+                                    <h6 class="w-600">2. What are the personal loan eligibility requirements?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
                                         <div class="faqs-2-answer">
-                                            <p>Applicants may be asked to provide the following documents:</p>
+                                            <p>Eligibility requirements for a personal loan are:</p>
+                                            <p><strong>For Salaried Professionals:</strong></p>
+                                            <div class="ps-2">
+                                                <p>&bull; Minimum Age: 21 Years </p>
+                                                <p>&bull; Minimum Salary: Rs.15,000 Per Month (Should reflect in bank statement)</p>
+                                                <p>&bull; Minimum Job Duration: 1 Year</p>
+                                            </div>
+                                            <p><strong>For Self-Employed:</strong></p>
+                                            <div class="ps-2">
+                                                <p>&bull; Minimum Age: 21 Years </p>
+                                                <p>&bull; Income Tax Return Of Minimum 1 Year</p>
+                                                <p>&bull; Minimum 1 Year into Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item mb-10">
+                                <div class="accordion-thumb">
+                                    <h6 class="w-600">3. What documents do I need to apply for a personal loan? </h6>
+                                </div>
+                                <div class="accordion-panel">
+                                    <div class="accordion-panel-item">
+                                        <div class="faqs-2-answer">
+                                            <p>The following are the general documents needed to apply for a personal loan.</p>
+                                            <p><strong>For Salaried Employees:</strong></p>
                                             <div class="ps-2">
                                                 <p>&bull; Aadhaar Card</p>
                                                 <p>&bull; PAN Card</p>
-                                                <p>&bull; Proof of Income (Salary Slip or Form 16 for salaried individuals)</p>
-                                                <p>&bull; Recent Bank Statements reflecting income deposits</p>
-                                                <p>&bull; Residential Address Proof (Utility bill, rental agreement, etc.)</p>
+                                                <p>&bull; Residence Proof: Rent agreement or Utility bills </p>
+                                                <p>&bull; Bank Statement</p>
+                                                <p>&bull; Income Proof: Salary Slips or Form 16</p>
                                             </div>
-                                            <p>Depending on the applicant’s profile, lenders may request additional documentation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion-item mb-10">
-                                <div class="accordion-thumb">
-                                    <h6 class="w-600">3. Are there any tax advantages related to unsecured loans?</h6>
-                                </div>
-                                <div class="accordion-panel">
-                                    <div class="accordion-panel-item">
-                                        <div class="faqs-2-answer">
-                                            <p>
-                                                Tax benefits generally depend on how the borrowed funds are used. For example, benefits may apply if the funds are utilized for purposes such as home renovation or certain business investments. For accurate guidance, it is advisable to consult a qualified tax advisor or chartered accountant.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion-item mb-10">
-                                <div class="accordion-thumb">
-                                    <h6 class="w-600">4. Can I apply for a loan online without visiting a bank branch?</h6>
-                                </div>
-                                <div class="accordion-panel">
-                                    <div class="accordion-panel-item">
-                                        <div class="faqs-2-answer">
-                                            <p>
-                                                Yes. RightBorrow.com provides a digital platform where users can check eligibility, submit documents, and initiate loan applications online through partnered financial institutions, subject to subscription-based service access.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion-item mb-10">
-                                <div class="accordion-thumb">
-                                    <h6 class="w-600">5. Can loan funds be used for purposes like education or personal expenses?</h6>
-                                </div>
-                                <div class="accordion-panel">
-                                    <div class="accordion-panel-item">
-                                        <div class="faqs-2-answer">
-                                            <p>Unsecured loans generally offer flexible usage. Funds may be used for various personal or financial needs such as:</p>
+
+                                            <p><strong>For Self-Employed Individuals:</strong></p>
                                             <div class="ps-2">
-                                                <p>&bull; Higher education expenses</p>
-                                                <p>&bull; Home improvements</p>
-                                                <p>&bull; Medical bills</p>
-                                                <p>&bull; Travel or lifestyle expenses</p>
-                                                <p>&bull; Debt consolidation</p>
+                                                <p>&bull; Aadhaar Card</p>
+                                                <p>&bull; PAN Card</p>
+                                                <p>&bull; Residence Proof: Rent agreement or Utility bills</p>
+                                                <p>&bull; Bank Statement</p>
+                                                <p>&bull; Balance Sheet</p>
+                                                <p>&bull; Income Computation</p>
+                                                <p>&bull; Service Tax Registration, License, Registration Certificate</p>
+                                                <p>&bull; Income Tax Returns</p>
                                             </div>
-                                            <p>However, final usage terms may vary depending on the lending institution.</p>
+                                        </div>
+                                        <p>Based on your profile and the guidelines, the lender may request additional documents. </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item mb-10">
+                                <div class="accordion-thumb">
+                                    <h6 class="w-600">4. Does your credit score matter when you apply for a personal loan?</h6>
+                                </div>
+                                <div class="accordion-panel">
+                                    <div class="accordion-panel-item">
+                                        <div class="faqs-2-answer">
+                                            <p>Yes, your credit score is an important consideration during the loan application process. It is one of the most important factors used by lenders to determine your creditworthiness.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item mb-10">
+                                <div class="accordion-thumb">
+                                    <h6 class="w-600">5. What can I do to improve my chances of being approved for a personal loan?</h6>
+                                </div>
+                                <div class="accordion-panel">
+                                    <div class="accordion-panel-item">
+                                        <div class="faqs-2-answer">
+                                            <p>To increase your chances, keep a good credit score, have consistent income, and provide accurate documentation during the application process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item mb-10">
+                                <div class="accordion-thumb">
+                                    <h6 class="w-600">6. Do personal loans have any direct tax advantages?</h6>
+                                </div>
+                                <div class="accordion-panel">
+                                    <div class="accordion-panel-item">
+                                        <div class="faqs-2-answer">
+                                            <p>No, personal loans do not provide any direct tax benefits. However, if you use a personal loan to invest in your business, renovate your home, or pay for your education, you may be able to deduct the interest. For more information, please contact your CA or tax advisor. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,35 +135,17 @@
 
                             <li class="accordion-item mb-10">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">6. What factors influence loan approval?</h6>
+                                    <h6 class="w-600">7. In addition to credit scores, what other factors do lenders consider when approving personal loans?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
                                         <div class="faqs-2-answer">
-                                            <p>Loan approval decisions are primarily based on the applicant’s financial profile. Key factors include:</p>
-                                            <div class="ps-2">
-                                                <p>&bull; Applicant’s age</p>
-                                                <p>&bull; Monthly income and financial stability</p>
-                                                <p>&bull; Credit score or credit history</p>
-                                                <p>&bull; Existing liabilities and repayment capacity</p>
-                                            </div>
-                                            <p>Lenders may also consider additional criteria based on their risk assessment models.</p>
+                                            <p>In addition to the credit score, lenders take the applicant's age, income, and job stability into account. </p>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
-                                <div class="accordion-thumb">
-                                    <h6 class="w-600">7. What credit score is considered suitable for applying?</h6>
-                                </div>
-                                <div class="accordion-panel">
-                                    <div class="accordion-panel-item">
-                                        <div class="faqs-2-answer">
-                                            <p>While requirements may vary by lender, a credit score of around 650 or above is generally considered favorable for loan applications. Higher credit scores may improve the chances of approval and potentially offer better terms.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
                 <div class="footer-info">
                     <img class="footer-logo" src="{{ asset('front/images/logo/logo-w.png') }}" alt="{{ env('APP_NAME') }}" width="140" height="50" />
                     <div class="fs-6 mt-3 mb-5 text-light">
-                        <p>RightBorrow is India's thriving financial consultation and service provider that streamlines the loan process through its NBFC partners, giving you the option to apply on your own using the self-apply feature or hire a loan agent to make better borrowing decisions.</p>
+                        <p>Right Borrow is a trusted financial consultation platform that simplifies borrowing with expert guidance and tailored solutions, allowing you to confidently achieve your financial goals.</p>
                     </div>
                     <ul class="footer-socials mt-4 ico-25 text-center clearfix">
                         <li>

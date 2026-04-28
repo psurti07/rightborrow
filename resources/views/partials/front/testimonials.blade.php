@@ -2,13 +2,13 @@
 <div class="owl-carousel owl-theme reviews-1-wrapper">
     <div class="review-1 bg--white-100 block-shadow r-08">
         <div class="review-txt pt-30">
-            <p><i>"I used the <strong>Hire Loan Agent</strong> option on RightBorrow and it made the whole process very smooth. The loan expert helped me step by step and handled the bank coordination. It saved me a lot of time and effort."</i></p>
+            <p><i>"Right Borrow is the right place if you are looking to borrow money. They will genuinely help you and make sure your whole process goes smoothly."</i></p>
             <div class="author-data clearfix">
                 <div class="review-avatar">
                     <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
                 </div>
                 <div class="review-author">
-                    <h4 class="s-16 w-600">Rohit Singh</h4>
+                    <h4 class="s-16 w-600">Saravanan Gowtham </h4>
                     <div class="star-rating ico-15">
                         <span class="flaticon-star"></span>
                         <span class="flaticon-star"></span>
@@ -22,13 +22,13 @@
     </div>
     <div class="review-1 bg--white-100 block-shadow r-08">
         <div class="review-txt pt-30">
-            <p><i>“The <strong>Self Apply feature</strong> is very useful. I could directly access loan application links and compare options from different NBFCs. The process was simple and completely online”</i></p>
+            <p><i>“I would like to extend a big thank you to Right Borrow for helping me in getting the money I required quickly and without me facing any trouble.”</i></p>
             <div class="author-data clearfix">
                 <div class="review-avatar">
                     <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
                 </div>
                 <div class="review-author">
-                    <h4 class="s-16 w-600">Priya Mehta </h4>
+                    <h4 class="s-16 w-600">Sameer Khan</h4>
                     <div class="star-rating ico-15">
                         <span class="flaticon-star"></span>
                         <span class="flaticon-star"></span>
@@ -42,13 +42,13 @@
     </div>
     <div class="review-1 bg--white-100 block-shadow r-08">
         <div class="review-txt pt-30">
-            <p><i>"I initially tried applying myself but then chose the <strong>Hire Loan Agent</strong> service. The dedicated agent explained the documentation clearly and helped manage the entire process."</i></p>
+            <p><i>"My overall experience with Right Borrow has been wonderful. The team is very professional, prompt, responsive, and attentive. Highly recommended. "</i></p>
             <div class="author-data clearfix">
                 <div class="review-avatar">
                     <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
                 </div>
                 <div class="review-author">
-                    <h4 class="s-16 w-600">Amit Verma</h4>
+                    <h4 class="s-16 w-600">Manoj Sahu</h4>
                     <div class="star-rating ico-15">
                         <span class="flaticon-star"></span>
                         <span class="flaticon-star"></span>
@@ -62,13 +62,13 @@
     </div>
     <div class="review-1 bg--white-100 block-shadow r-08">
         <div class="review-txt pt-30">
-            <p><i>"The <strong>Self Apply</strong> option is perfect if you want to manage everything yourself. I liked that RightBorrow provided professional consultation and direct links to apply with lenders."</i></p>
+            <p><i>"I am very grateful to Right Borrow and their whole team. With your help, I secured the best interest rate and received a quick loan disbursement. "</i></p>
             <div class="author-data clearfix">
                 <div class="review-avatar">
                     <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
                 </div>
                 <div class="review-author">
-                    <h4 class="s-16 w-600">Sneha Patel</h4>
+                    <h4 class="s-16 w-600">Jayanti Shah</h4>
                     <div class="star-rating ico-15">
                         <span class="flaticon-star"></span>
                         <span class="flaticon-star"></span>
@@ -82,33 +82,13 @@
     </div>
     <div class="review-1 bg--white-100 block-shadow r-08">
         <div class="review-txt pt-30">
-            <p><i>“The <strong>Hire Loan Agent</strong> feature is very helpful for people who are not familiar with loan processes. The expert assisted me from application to bank verification.”</i></p>
+            <p><i>“The process is very simple and completely online. The team is very cooperative. Got disbursement through them without any hassle. ”</i></p>
             <div class="author-data clearfix">
                 <div class="review-avatar">
                     <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
                 </div>
                 <div class="review-author">
-                    <h4 class="s-16 w-600">Rahul Kumar</h4>
-                    <div class="star-rating ico-15">
-                        <span class="flaticon-star"></span>
-                        <span class="flaticon-star"></span>
-                        <span class="flaticon-star"></span>
-                        <span class="flaticon-star"></span>
-                        <span class="flaticon-star-half-empty mr-5"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="review-1 bg--white-100 block-shadow r-08">
-        <div class="review-txt pt-30">
-            <p><i>“I liked the flexibility RightBorrow gives. You can either <strong>apply yourself</strong> or <strong> hire an expert agent</strong>. I used the self apply option and the process was quick and transparent.”</i></p>
-            <div class="author-data clearfix">
-                <div class="review-avatar">
-                    <img src="{{ asset('front/images/logo/apple-touch-icon.png') }}" alt="review-avatar" width="auto">
-                </div>
-                <div class="review-author">
-                    <h4 class="s-16 w-600">Neha Kapoor</h4>
+                    <h4 class="s-16 w-600">Abhinav Gupta</h4>
                     <div class="star-rating ico-15">
                         <span class="flaticon-star"></span>
                         <span class="flaticon-star"></span>
