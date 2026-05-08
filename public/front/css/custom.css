@@ -131,3 +131,6 @@ min-height: auto !important;
 #join-our-team .role-box:hover span, #join-our-team .role-box:hover p, #join-our-team .role-box:hover h5{
   color: #fff !important;
 }
+.feature-top{
+  margin-top: -90px;
+}

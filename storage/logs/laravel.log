@@ -11,3 +11,112 @@
 </smslist>
   
 [2026-04-27 12:09:39] local.ERROR: selfapply checkout - checkout method error occured: Authentication failed  
+[2026-05-06 15:42:25] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1005</code>
+<reason>SMSContentCannotBeBlank</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:19:59] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1005</code>
+<reason>SMSContentCannotBeBlank</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:20:26] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1005</code>
+<reason>SMSContentCannotBeBlank</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:20:53] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1005</code>
+<reason>SMSContentCannotBeBlank</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:21:07] local.ERROR: selfapply checkout - checkout method error occured: Authentication failed  
+[2026-05-08 15:21:35] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1005</code>
+<reason>SMSContentCannotBeBlank</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:23:28] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1001</code>
+<reason>InvalidUseridPassword</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:24:05] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1001</code>
+<reason>InvalidUseridPassword</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:24:28] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1001</code>
+<reason>InvalidUseridPassword</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  
+[2026-05-08 15:24:32] local.INFO: 
+<smslist>
+<sms>
+<status>error</status>
+<code>1001</code>
+<reason>InvalidUseridPassword</reason>
+<clientsmsid></clientsmsid>
+<messageid>-1</messageid>
+<mobileno>0</mobileno>
+</sms>
+</smslist>
+  

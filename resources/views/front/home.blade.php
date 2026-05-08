@@ -10,15 +10,17 @@
 @endpush
 @section('content')
 <!-- main section starts -->
-<section id="hero-7" class="hero-section bg--green-100 bg--scroll pb-0">
+<section id="hero-8" class="hero-section bg--scroll bg--green-400">
     <!-- <div class="hero-overlay"> -->
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6 col-12">
                 <div class="hero-7-txt">
                     <div class=" mt-lg-0 mb-lg-5">
-                        <h1 class="s-40 w-700">Turn All Your Financial Goals Into <span class="color--green-500">Reality In Style</span></h1>
-                        <p class="mb-20">Get top-tier financial consultation, tailored services, and smart solutions from industry experts to meet your goals with ease</p>
+                        <h1 class="s-40 w-700">Turn All Your Financial Goals Into <span class="color--green-500">Reality
+                                In Style</span></h1>
+                        <p class="mb-20">Get top-tier financial consultation, tailored services, and smart solutions
+                            from industry experts to meet your goals with ease</p>
                         <a href="{{ route('self.apply.main') }}"
                             class="btn r-04 btn--theme hover--tra-black last-link">Self Apply</a>
                         <a href="{{ route('loan.agent.main') }}"
@@ -26,16 +28,92 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-12 ">
+            <!-- <div class="col-md-6 col-lg-6 col-12 ">
                 <div class="hero-7-img d-flex justify-content-center align-items-start">
                     <img src="{{ asset('front/images/Who-Can-Apply.webp') }}" alt="rightborrow" class="img-fluid p-0">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- </div> -->
 </section>
 <!-- main section ends -->
+
+
+<!-- why rightborrow section starts -->
+<section id="features-6" class="pt-0 features-section feature-top division">
+    <div class="container bg--green-100 py-50 rounded-3">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">Why <span class="color--green-500">Choose Us</span></h2>
+                    <p class="s-16 color--grey mt-0">Here's what sets us apart</p>
+                </div>
+            </div>
+        </div>
+        <div class="fbox-wrapper text-center">
+            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <div class="fbox-8 fbox--hover fb-1 r-12 border d-flex">
+                        <div class="fbox-ico ico-50">
+                            <div class="shape-ico color--theme">
+                                <span class="flaticon-layers-1"></span>
+                            </div>
+                        </div>
+                        <div class="fbox-txt ms-3 text-start">
+                            <h4 class="s-18 w-700">Effective Collab With NBFCs</h4>
+                            <p>Presenting a wide range of premier financial services empowered by our enriching
+                                partnership.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border d-flex">
+                        <div class="fbox-ico ico-50">
+                            <div class="shape-ico color--theme">
+                                <span class="flaticon-computer-1"></span>
+                            </div>
+                        </div>
+                        <div class="fbox-txt ms-3 text-start">
+                            <h4 class="s-18 w-700">Expert Financial Consultation</h4>
+                            <p>Elevate your financial aspects with the help of insights & strategies from industry
+                                professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border d-flex">
+                        <div class="fbox-ico ico-50">
+                            <div class="shape-ico color--theme">
+                                <span class="flaticon-click-1"></span>
+                            </div>
+                        </div>
+                        <div class="fbox-txt ms-3 text-start">
+                            <h4 class="s-18 w-700">100% Digital Process</h4>
+                            <p>Enjoy the ease and efficiency of modern digital solutions right from the comfort of your
+                                home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="fbox-8 fbox--hover fb-3 r-12 border d-flex">
+                        <div class="fbox-ico ico-50">
+                            <div class="shape-ico color--theme">
+                                <span class="flaticon-tech-support"></span>
+                            </div>
+                        </div>
+                        <div class="fbox-txt ms-3 text-start">
+                            <h4 class="s-18 w-700">Choose Your Preference</h4>
+                            <p>Hire a loan agent or apply by yourself – simply choose the option that suits your
+                                preferences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- why rightborrow section ends -->
 
 <!-- Our Partners section start  -->
 <section id="integrations-2" class="py-80 integrations-section">
@@ -76,97 +154,144 @@
                     <p class="s-16 color--grey mt-0">Enabling You to Achieve More With Confidence</p>
                 </div>
             </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="txt-block right-column">
+                        <p>Right Borrow is your trusted partner for financial solutions. We work with the best NBFCs to
+                            make
+                            it easy and quick to get a loan. Our team of experts makes sure that the process from
+                            application to approval goes smoothly and is clear, so you can reach your goals without any
+                            unnecessary delays. Whether it is funding your dream, managing expenses, or growing your
+                            business, Right Borrow makes financial empowerment simple and accessible for everyone.</p>
 
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="txt-block right-column bg-white p-4 r-12">
-                    <p class="">Right Borrow is your trusted partner for financial solutions. We work with the best NBFCs to make it easy and quick to get a loan. Our team of experts makes sure that the process from application to approval goes smoothly and is clear, so you can reach your goals without any unnecessary delays. Whether it is funding your dream, managing expenses, or growing your business, Right Borrow makes financial empowerment simple and accessible for everyone.</p>
+                    </div>
+                    <div class="txt-block right-column">
+                        <ul class="simple-list ms-0">
+                            <p>With Right Borrow, you are not just applying for a loan; you are partnering with a
+                                network
+                                that prioritizes your success. We provide personalized guidance and ensure you get the
+                                best
+                                terms available.</p>
+                            <p>Experience a smarter, faster way to access finance and take confident steps toward your
+                                financial goals.</p>
+                        </ul>
+                    </div>
+                    <div class="txt-block right-column">
+                        <ul class="simple-list ms-0">
+                            <p>With Right Borrow, you are not just applying for a loan; you are partnering with a
+                                network
+                                that prioritizes your success. We provide personalized guidance and ensure you get the
+                                best
+                                terms available.</p>
+                            <p>Experience a smarter, faster way to access finance and take confident steps toward your
+                                financial goals.</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="fbox-wrapper text-center bg-white r-12 p-4">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1">
+                            <div class="col">
+                                <div class="fbox-11 fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-mobile-search"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">Begin by entering your mobile number and bank-registered name.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col">
+                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-computer"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">Our system will evaluate your eligibility and display
+                                            pre-approved
+                                            loan offers. This is not a final offer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-credit-card"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">Purchase a plan that best suits your needs to gain access to the
+                                            displayed pre-approved loan offers.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-time"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">Our login team will contact you within 24-48 hours to verify
+                                            your
+                                            information and walk you through the documentation process.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="fbox-11 fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-check-1"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">The NBFC will assess your profile and documents in accordance
+                                            with
+                                            their applicable terms and conditions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="fbox-11  fbox--hover fb-1 px-2 py-3 d-flex">
+                                    <div class="fbox-ico ico-30 mb-0">
+                                        <div class="shape-ico color--theme">
+                                            <span class="flaticon-profits"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fbox-txt text-start ms-4">
+                                        <p class="mt-0">The NBFC will determine the final approval, sanction, and
+                                            disbursement of the loan based on their policies and regulations.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="txt-block right-column bg--green-400 p-4 r-12 text-white h-100">
-                    <ul class="simple-list">
-                        <p>With Right Borrow, you are not just applying for a loan; you are partnering with a network that prioritizes your success. We provide personalized guidance and ensure you get the best terms available.</p>
-                        <p>Experience a smarter, faster way to access finance and take confident steps toward your financial goals.</p>
-                    </ul>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
 
 <hr class="divider">
 
-<!-- why rightborrow section starts -->
-<section id="features-6" class="py-80 features-section division">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-40">
-                    <h2 class="s-28 mb-5">Why <span class="color--green-500">Choose Us</span></h2>
-                    <p class="s-16 color--grey mt-0">Here's what sets us apart</p>
-                </div>
-            </div>
-        </div>
-        <div class="fbox-wrapper text-center">
-            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col d-flex align-items-stretch">
-                    <div class="fbox-8 fbox--hover fb-1 r-12 border">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-layers-1"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Effective Collab With NBFCs</h4>
-                            <p>Presenting a wide range of premier financial services empowered by our enriching partnership.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-computer-1"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Expert Financial Consultation</h4>
-                            <p>Elevate your financial aspects with the help of insights & strategies from industry professionals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-click-1"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">100% Digital Process</h4>
-                            <p>Enjoy the ease and efficiency of modern digital solutions right from the comfort of your home.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="fbox-8 fbox--hover fb-3 r-12 border">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-tech-support"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Choose Your Preference</h4>
-                            <p>Hire a loan agent or apply by yourself – simply choose the option that suits your preferences.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- why rightborrow section ends -->
+
 
 <!-- Trust Badges Section starts -->
 <div id="statistic-1" class=" bg--green-400 ct-03 py-50 statistic-section division">
@@ -241,7 +366,8 @@
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10">
                 <div class="section-title mb-40">
-                    <h2 class="s-28 mb-5">Take Charge of <span class="color--green-500">Your Finances with a Smart Approach</span>
+                    <h2 class="s-28 mb-5">Take Charge of <span class="color--green-500">Your Finances with a Smart
+                            Approach</span>
                     </h2>
                     <p class="s-16 color--grey mt-0">Select the plan that best meets your needs and goals.</p>
                 </div>
@@ -261,7 +387,8 @@
                         <div class="txt-block right-column">
                             <h3 class="s-22 w-700 mb-2">Quick Self-Apply</h3>
                             <p class="mb-2">
-                                Get access to seamless digital loan consultation, quick login links, and exclusive personalized offers from our trusted NBFC partners.
+                                Get access to seamless digital loan consultation, quick login links, and exclusive
+                                personalized offers from our trusted NBFC partners.
                             </p>
                             <a href="{{ route('self.apply.main') }}" class="btn r-04 btn--theme hover--tra-black">
                                 Apply Now
@@ -283,7 +410,8 @@
                         <div class="txt-block left-column">
                             <h3 class="s-22 w-700 mb-2">Hire Loan Agent</h3>
                             <p class="mb-2">
-                                Allow our experienced loan experts to handle the entire process while you enjoy a seamless and hassle-free loan experience.
+                                Allow our experienced loan experts to handle the entire process while you enjoy a
+                                seamless and hassle-free loan experience.
                             </p>
                             <a href="{{ route('loan.agent.main') }}" class="btn r-04 btn--theme hover--tra-black">
                                 Apply Now
@@ -302,7 +430,7 @@
 <!-- Products Intro section ends -->
 
 <!-- Quick and swift steps section starts -->
-<section id="features-2" class="py-80 bg--green-100 features-section division">
+<!-- <section id="features-2" class="py-80 bg--green-100 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
@@ -336,7 +464,8 @@
                             </div>
                         </div>
                         <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Our system will evaluate your eligibility and display pre-approved loan offers. This is not a final offer.
+                            <p class="mt-0">Our system will evaluate your eligibility and display pre-approved loan
+                                offers. This is not a final offer.
                             </p>
                         </div>
                     </div>
@@ -350,7 +479,8 @@
                             </div>
                         </div>
                         <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Purchase a plan that best suits your needs to gain access to the displayed pre-approved loan offers.</p>
+                            <p class="mt-0">Purchase a plan that best suits your needs to gain access to the displayed
+                                pre-approved loan offers.</p>
                         </div>
                     </div>
                 </div>
@@ -363,7 +493,8 @@
                             </div>
                         </div>
                         <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Our login team will contact you within 24-48 hours to verify your information and walk you through the documentation process.</p>
+                            <p class="mt-0">Our login team will contact you within 24-48 hours to verify your
+                                information and walk you through the documentation process.</p>
                         </div>
                     </div>
                 </div>
@@ -376,7 +507,8 @@
                             </div>
                         </div>
                         <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">The NBFC will assess your profile and documents in accordance with their applicable terms and conditions.
+                            <p class="mt-0">The NBFC will assess your profile and documents in accordance with their
+                                applicable terms and conditions.
                             </p>
                         </div>
                     </div>
@@ -390,7 +522,8 @@
                             </div>
                         </div>
                         <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">The NBFC will determine the final approval, sanction, and disbursement of the loan based on their policies and regulations.</p>
+                            <p class="mt-0">The NBFC will determine the final approval, sanction, and disbursement of
+                                the loan based on their policies and regulations.</p>
                         </div>
                     </div>
                 </div>
@@ -398,7 +531,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Quick and swift steps section end -->
 
 <!-- eligibility calculator starts -->
@@ -684,7 +817,8 @@
             <div class="col-lg-6 md-mb-50">
                 <div class="sec-title2 mb-40">
                     <h2 class="s-28 mb-5">Let's Get In <span class="color--green-500">Touch</span></h2>
-                    <p class="description mt-0">Have any questions or need help? Send us a message, and we will contact you shortly.</p>
+                    <p class="description mt-0">Have any questions or need help? Send us a message, and we will contact
+                        you shortly.</p>
                 </div>
                 <div class="row gy-3 gx-3">
                     <div class="col-lg-6 col-md-6 col-12">
@@ -826,115 +960,115 @@
 <script src="{{ asset('front/js/home.js') }}" type="text/javascript"></script>
 @if($msg->status == 1)
 <script>
-    $(document).ready(function() {
-        setTimeout(function() {
-            $(".myModal:not(.auto-off)").modal("show");
-        }, 3600);
-    })
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".myModal:not(.auto-off)").modal("show");
+    }, 3600);
+})
 </script>
 @endif
 
 <script>
-    const routes = {
-        'selfapply': "{{ route('self.apply.send.otp') }}",
-        'loan-agent': "{{ route('loan.agent.send.otp') }}"
-    };
+const routes = {
+    'selfapply': "{{ route('self.apply.send.otp') }}",
+    'loan-agent': "{{ route('loan.agent.send.otp') }}"
+};
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const faqs = document.querySelectorAll('#faq-container li');
-        const loadMoreButton = document.getElementById('load-more-faq');
-        const viewLessButton = document.getElementById('view-less-faq');
-        let visibleCount = 5; // Number of FAQs initially shown
-        const batchSize = 5; // Number of FAQs to show on each click
+document.addEventListener('DOMContentLoaded', () => {
+    const faqs = document.querySelectorAll('#faq-container li');
+    const loadMoreButton = document.getElementById('load-more-faq');
+    const viewLessButton = document.getElementById('view-less-faq');
+    let visibleCount = 5; // Number of FAQs initially shown
+    const batchSize = 5; // Number of FAQs to show on each click
 
-        // Initial setup: Show the first 7 FAQs
+    // Initial setup: Show the first 7 FAQs
+    faqs.forEach((faq, index) => {
+        if (index >= visibleCount) {
+            faq.style.display = 'none';
+        }
+    });
+
+    // Event listener for Load More button
+    loadMoreButton.addEventListener('click', () => {
+        const hiddenFaqs = Array.from(faqs).filter(faq => faq.style.display === 'none');
+        for (let i = 0; i < batchSize && i < hiddenFaqs.length; i++) {
+            hiddenFaqs[i].style.display = 'list-item';
+        }
+
+        // Show the "View Less" button once more items are displayed
+        if (hiddenFaqs.length > 0) {
+            viewLessButton.style.display = 'inline-block';
+        }
+
+        // Hide the "Load More" button if no more FAQs to show
+        if (hiddenFaqs.length <= batchSize) {
+            loadMoreButton.style.display = 'none';
+        }
+    });
+
+    // Event listener for View Less button
+    viewLessButton.addEventListener('click', () => {
         faqs.forEach((faq, index) => {
             if (index >= visibleCount) {
                 faq.style.display = 'none';
             }
         });
 
-        // Event listener for Load More button
-        loadMoreButton.addEventListener('click', () => {
-            const hiddenFaqs = Array.from(faqs).filter(faq => faq.style.display === 'none');
-            for (let i = 0; i < batchSize && i < hiddenFaqs.length; i++) {
-                hiddenFaqs[i].style.display = 'list-item';
-            }
-
-            // Show the "View Less" button once more items are displayed
-            if (hiddenFaqs.length > 0) {
-                viewLessButton.style.display = 'inline-block';
-            }
-
-            // Hide the "Load More" button if no more FAQs to show
-            if (hiddenFaqs.length <= batchSize) {
-                loadMoreButton.style.display = 'none';
-            }
-        });
-
-        // Event listener for View Less button
-        viewLessButton.addEventListener('click', () => {
-            faqs.forEach((faq, index) => {
-                if (index >= visibleCount) {
-                    faq.style.display = 'none';
-                }
-            });
-
-            // Reset button visibility
-            loadMoreButton.style.display = 'inline-block';
-            viewLessButton.style.display = 'none';
-        });
+        // Reset button visibility
+        loadMoreButton.style.display = 'inline-block';
+        viewLessButton.style.display = 'none';
     });
+});
 
-    $(document).ready(function() {
-        $(".contact-form").submit(function(e) {
-            let status = document.activeElement.innerHTML;
-            e.preventDefault();
-            if (status) {
-                $('.ajax-error').html('');
-                let data = new FormData(this);
-                $.ajax({
-                    url: $(this).attr("action"),
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    type: 'POST',
-                    data: data,
-                    processData: false,
-                    contentType: false,
-                    beforeSend: function() {
-                        $("#submit-btn").html(
-                            '<span class="spinner-border spinner-border-sm"></span> Submit Request '
-                        )
-                        $("#submit-btn").attr('disabled', true);
-                    },
-                    success: function(result) {
-                        $(this).attr("disabled", false);
-                        if (result.type === 'SUCCESS') {
-                            toastr.success(result.message);
-                            setTimeout(function() {
-                                location.reload();
-                            }, 3000);
-                        } else {
-                            toastr.error(result.message);
-                            $('#submit-btn').html('Submit Request');
-                            $('#submit-btn').attr('disabled', false);
-                        }
-                    },
-                    error: function(error) {
-                        $(this).attr("disabled", false);
-                        let errors = error.responseJSON.errors,
-                            errorsHtml = '';
-                        $.each(errors, function(key, value) {
-                            errorsHtml = '<strong>' + value[0] + '</strong>';
-                            $('.' + key).html(errorsHtml);
-                        });
+$(document).ready(function() {
+    $(".contact-form").submit(function(e) {
+        let status = document.activeElement.innerHTML;
+        e.preventDefault();
+        if (status) {
+            $('.ajax-error').html('');
+            let data = new FormData(this);
+            $.ajax({
+                url: $(this).attr("action"),
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'POST',
+                data: data,
+                processData: false,
+                contentType: false,
+                beforeSend: function() {
+                    $("#submit-btn").html(
+                        '<span class="spinner-border spinner-border-sm"></span> Submit Request '
+                    )
+                    $("#submit-btn").attr('disabled', true);
+                },
+                success: function(result) {
+                    $(this).attr("disabled", false);
+                    if (result.type === 'SUCCESS') {
+                        toastr.success(result.message);
+                        setTimeout(function() {
+                            location.reload();
+                        }, 3000);
+                    } else {
+                        toastr.error(result.message);
                         $('#submit-btn').html('Submit Request');
                         $('#submit-btn').attr('disabled', false);
                     }
-                });
-            }
-        });
+                },
+                error: function(error) {
+                    $(this).attr("disabled", false);
+                    let errors = error.responseJSON.errors,
+                        errorsHtml = '';
+                    $.each(errors, function(key, value) {
+                        errorsHtml = '<strong>' + value[0] + '</strong>';
+                        $('.' + key).html(errorsHtml);
+                    });
+                    $('#submit-btn').html('Submit Request');
+                    $('#submit-btn').attr('disabled', false);
+                }
+            });
+        }
     });
+});
 </script>
 @endpush

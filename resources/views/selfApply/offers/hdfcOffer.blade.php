@@ -13,12 +13,12 @@
         <div id="hero-7" class="page-hero-section-overlay bg--scroll">
             <div class="container position-relative">
                 <div class="row d-flex align-items-bottom">
-                    <div class="col-md-5 order-2 order-md-1">
+                    <div class="col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
                         <div class="hero-7-img home-img d-flex justify-content-center align-items-start">
                             <img src="{{ asset('front/images/offer/offer-img.webp') }}" alt="RightBorrow" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 self-apply-form  form-container order-1 order-md-2">
+                    <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-3">
                         <div id="hero-8-form" class="r-06 bg-white p-4">
                             <h4 class="s-22 text-dark mb-1"> Get Personal Loan up to <span class="text-success"> <strong>&#8377;10 LAKHS</strong></span> from Affiliate NBFCs!</h4>
                             <p class="s-14">Unlock Your Personalized Pre-Approved Loan Offers</p>

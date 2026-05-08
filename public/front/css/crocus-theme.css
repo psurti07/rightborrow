@@ -3558,9 +3558,9 @@ span.sm-info {
 
 #hero-8 {
     position: relative;
-    background-image: url(../images/bg-03.jpg);
-    padding-top: 170px;
-    padding-bottom: 30px;
+    background-image: url(../images/bg-05.jpg);
+    padding-top: 250px;
+    padding-bottom:200px;
 }
 
 .hero-8-txt {
@@ -3598,7 +3598,7 @@ span.sm-info {
 
 #hero-8-form p.p-sm {
     text-align: center;
-    padding: 0 5%!important;
+    padding: 0 !important;
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -9236,7 +9236,7 @@ img.footer-logo-dark {
     padding-top: 180px;
 }
 .personal-details-form {
-    padding-top: 140px;
+    padding-top: 120px;
 }
 
 .page-hero-section-overlay {

@@ -13,7 +13,7 @@
                     <div class="left-column">
                         <span class="section-id"></span>
                         <h2 class="w-700 mb-5">Career <span class="color--green-500">with us</span></h2>
-                        <p class="p-md w-400 mt-0">Growth. Fun. Excitement. Challenges – all in one place.</p>
+                        <p class="s-16 color--grey  mt-0">Growth. Fun. Excitement. Challenges – all in one place.</p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="section-title mb-40">
                     @if($data->isNotEmpty())
                     <h2 class="s-28 mb-5">Current Job <span class="color--green-500">Vacancies</span></h2>
-                    <p class="color--grey mt-0">See where you fit in.</p>
+                    <p class=" s-16 color--grey mt-0">See where you fit in.</p>
                     @else
                     <h2 class="">Sorry!!</h2>
                     <p class="color--grey">We currently do not have any vacancies.</p>
