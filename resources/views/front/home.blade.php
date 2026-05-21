@@ -433,7 +433,8 @@
                 </div>
             </div>
         </div>
-        <div class="row p-30 bg--white-100 shadow border-grey-1 r-20">
+        <div class="p-30 bg--white-100 shadow border-grey-1 r-20">
+     <div class="row">
             <div class="col-md-7 order-first order-md-2">
                 <div id="emicalculatorinnerformwrapper">
                     <form id="emicalculatorform" class="comment-form">
@@ -670,6 +671,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
