@@ -15,7 +15,7 @@
                 <div class="row d-flex align-items-bottom">
                     <div class="col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
                         <div class="hero-7-img home-img d-flex justify-content-center align-items-start">
-                            <img src="{{ asset('front/images/offer/offer-img.webp') }}" alt="RightBorrow" class="img-fluid">
+                            <img src="{{ asset('front/images/offer/offer-img.webp') }}" alt="RightBorrow" class="img-fluid rounded-3">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-3">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="p-sm mt-3 mb-0">By submitting the form & proceeding, you agree to the <a href="{{ route('front.terms.conditions') }}" target="_blank" class="text-dark text-decoration-none">Terms</a>  and <a href="{{ route('front.privacy.policy') }}" target="_blank" class="text-dark text-decoration-none"> Privacy Policy</a> of RightBorrow.</p>
+                            <p class="p-sm mt-3 mb-0 text-start">By submitting the form & proceeding, you agree to the <a href="{{ route('front.terms.conditions') }}" target="_blank" class="text-dark text-decoration-none">Terms</a>  and <a href="{{ route('front.privacy.policy') }}" target="_blank" class="text-dark text-decoration-none"> Privacy Policy</a> of RightBorrow.</p>
                         </div>
                     </div>
                 </div>

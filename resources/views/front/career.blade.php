@@ -71,14 +71,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-profits color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Competitive Salary</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Competitive Salary</h6>
                             <p>We know your worth and we’ll make sure you’re paid what you deserve!</p>
                         </div>
                     </div>
@@ -86,14 +86,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-workflow-2 color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Growth-Oriented Culture</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Growth-Oriented Culture</h6>
                             <p>We’ll bring out the best in you so that your growth is nurtured impeccably.</p>
                         </div>
                     </div>
@@ -101,14 +101,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-prioritize color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Building Leaders</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Building Leaders</h6>
                             <p>We love identifying the leader in you! And provide you with some awesome leadership opportunities.</p>
                         </div>
                     </div>
@@ -116,14 +116,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-money color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Appreciation &amp; Rewards</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Appreciation &amp; Rewards</h6>
                             <p>Your persistence and hard work will always be acknowledged and rewarded!</p>
                         </div>
                     </div>
@@ -131,14 +131,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-fast-food color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Positive Workplace</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Positive Workplace</h6>
                             <p>We strongly believe in a non-discriminatory office environment, free of office politics.</p>
                         </div>
                     </div>
@@ -146,14 +146,14 @@
                 <div class="col">
                     <div class="fbox-11 fbox--hover fb-1 r-12 w-100 bg-white p-4 mb-0">
                         <div class="fbox-ico-wrap">
-                            <div class="fbox-ico ico-50 mb-0">
+                            <div class="fbox-ico ico-40 mb-0">
                                 <div class="shape-ico">
                                     <span class="flaticon-diamond color--theme"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fbox-txt">
-                            <h6 class="s-18 w-700">Every Voice Matters</h6>
+                            <h6 class="s-18 w-700 mt-lg-0 mt-3">Every Voice Matters</h6>
                             <p>We value every voice. No hierarchy barriers; all ideas and feedback are always welcome.</p>
                         </div>
                     </div>

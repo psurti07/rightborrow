@@ -10,13 +10,13 @@
 @endpush
 @section('content')
 <!-- main section starts -->
-<section id="hero-8" class="hero-section bg--scroll bg--green-400">
+<section id="hero-8" class="hero-section bg--scroll">
     <!-- <div class="hero-overlay"> -->
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6 col-12">
-                <div class="hero-7-txt">
-                    <div class=" mt-lg-0 mb-lg-5">
+                <div class="hero-7-txt bg-white px-4 py-5 rounded-3 fbox-8 fb-1 r-12 border">
+                    <div>
                         <h1 class="s-40 w-700">Turn All Your Financial Goals Into <span class="color--green-500">Reality
                                 In Style</span></h1>
                         <p class="mb-20">Get top-tier financial consultation, tailored services, and smart solutions
@@ -28,11 +28,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-md-6 col-lg-6 col-12 ">
-                <div class="hero-7-img d-flex justify-content-center align-items-start">
-                    <img src="{{ asset('front/images/Who-Can-Apply.webp') }}" alt="rightborrow" class="img-fluid p-0">
+            <div class="col-md-6 col-lg-6 col-12 ">
+                <div class="hero-7-img">
+                    <img src="{{ asset('front/images/homepage-img.png') }}" alt="rightborrow" class="img-fluid p-0">
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- </div> -->
@@ -41,68 +41,72 @@
 
 
 <!-- why rightborrow section starts -->
-<section id="features-6" class="pt-0 features-section feature-top division">
-    <div class="container bg--green-100 py-50 rounded-3">
-        <div class="row justify-content-center">
+<section id="features-6" class="pt-80 pb-80 features-section feature-top division">
+    <div class="container">
+        <!-- <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
                 <div class="section-title mb-40">
                     <h2 class="s-28 mb-5">Why <span class="color--green-500">Choose Us</span></h2>
                     <p class="s-16 color--grey mt-0">Here's what sets us apart</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="fbox-wrapper text-center">
-            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-2">
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-1 r-12 border d-flex">
+            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-layers-1"></span>
+                                <img src="{{ asset('front/images/Effective-Collab-With-NBFCs.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
-                        <div class="fbox-txt ms-3 text-start">
+                        <div class="fbox-txt ms-3 text-center">
                             <h4 class="s-18 w-700">Effective Collab With NBFCs</h4>
                             <p>Presenting a wide range of premier financial services empowered by our enriching
                                 partnership.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border d-flex">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-computer-1"></span>
+                                <img src="{{ asset('front/images/Expert-Financial-Consultation.png') }}"
+                                    alt="rightborrow" class="img-fluid">
                             </div>
                         </div>
-                        <div class="fbox-txt ms-3 text-start">
+                        <div class="fbox-txt ms-3 text-center">
                             <h4 class="s-18 w-700">Expert Financial Consultation</h4>
                             <p>Elevate your financial aspects with the help of insights & strategies from industry
                                 professionals.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border d-flex">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-click-1"></span>
+                                <img src="{{ asset('front/images/100%-Digital-Process.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
-                        <div class="fbox-txt ms-3 text-start">
+                        <div class="fbox-txt ms-3 text-center">
                             <h4 class="s-18 w-700">100% Digital Process</h4>
                             <p>Enjoy the ease and efficiency of modern digital solutions right from the comfort of your
                                 home.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-3 r-12 border d-flex">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-tech-support"></span>
+                                <img src="{{ asset('front/images/Choose-Your-Preference.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
-                        <div class="fbox-txt ms-3 text-start">
+                        <div class="fbox-txt ms-3 text-center">
                             <h4 class="s-18 w-700">Choose Your Preference</h4>
                             <p>Hire a loan agent or apply by yourself – simply choose the option that suits your
                                 preferences.</p>
@@ -114,184 +118,6 @@
     </div>
 </section>
 <!-- why rightborrow section ends -->
-
-<!-- Our Partners section start  -->
-<section id="integrations-2" class="py-80 integrations-section">
-    <div class="container">
-        <div class="r-12 text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-10">
-                    <div class="section-title mb-40">
-                        <h2 class="s-28 mb-5">Partnering With <span class="color--green-500">The Best</span></h2>
-                        <p class="s-16 color--grey mt-0">We work with top NBFCs to provide the best service. </p>
-                    </div>
-                </div>
-            </div>
-            @php
-            $lists = nbfcsList();
-            @endphp
-
-            <div class="bank-crousel">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="owl-carousel brands-carousel-6 emi-carousel">
-                            {!! $lists['carousel'] !!}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Our Partners section end  -->
-
-<section class="py-80 ct-02 content-section division bg--green-100" id="company">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-40">
-                    <h2 class="s-28 mb-5">About <span class="color--green-500">Right Borrow</span></h2>
-                    <p class="s-16 color--grey mt-0">Enabling You to Achieve More With Confidence</p>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="txt-block right-column">
-                        <p>Right Borrow is your trusted partner for financial solutions. We work with the best NBFCs to
-                            make
-                            it easy and quick to get a loan. Our team of experts makes sure that the process from
-                            application to approval goes smoothly and is clear, so you can reach your goals without any
-                            unnecessary delays. Whether it is funding your dream, managing expenses, or growing your
-                            business, Right Borrow makes financial empowerment simple and accessible for everyone.</p>
-
-                    </div>
-                    <div class="txt-block right-column">
-                        <ul class="simple-list ms-0">
-                            <p>With Right Borrow, you are not just applying for a loan; you are partnering with a
-                                network
-                                that prioritizes your success. We provide personalized guidance and ensure you get the
-                                best
-                                terms available.</p>
-                            <p>Experience a smarter, faster way to access finance and take confident steps toward your
-                                financial goals.</p>
-                        </ul>
-                    </div>
-                    <div class="txt-block right-column">
-                        <ul class="simple-list ms-0">
-                            <p>With Right Borrow, you are not just applying for a loan; you are partnering with a
-                                network
-                                that prioritizes your success. We provide personalized guidance and ensure you get the
-                                best
-                                terms available.</p>
-                            <p>Experience a smarter, faster way to access finance and take confident steps toward your
-                                financial goals.</p>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="fbox-wrapper text-center bg-white r-12 p-4">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1">
-                            <div class="col">
-                                <div class="fbox-11 fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-mobile-search"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">Begin by entering your mobile number and bank-registered name.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-computer"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">Our system will evaluate your eligibility and display
-                                            pre-approved
-                                            loan offers. This is not a final offer.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-credit-card"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">Purchase a plan that best suits your needs to gain access to the
-                                            displayed pre-approved loan offers.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="fbox-11  fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-time"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">Our login team will contact you within 24-48 hours to verify
-                                            your
-                                            information and walk you through the documentation process.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="fbox-11 fbox--hover fb-1 border-bottom px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-check-1"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">The NBFC will assess your profile and documents in accordance
-                                            with
-                                            their applicable terms and conditions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="fbox-11  fbox--hover fb-1 px-2 py-3 d-flex">
-                                    <div class="fbox-ico ico-30 mb-0">
-                                        <div class="shape-ico color--theme">
-                                            <span class="flaticon-profits"></span>
-                                        </div>
-                                    </div>
-                                    <div class="fbox-txt text-start ms-4">
-                                        <p class="mt-0">The NBFC will determine the final approval, sanction, and
-                                            disbursement of the loan based on their policies and regulations.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<hr class="divider">
-
-
 
 <!-- Trust Badges Section starts -->
 <div id="statistic-1" class=" bg--green-400 ct-03 py-50 statistic-section division">
@@ -360,6 +186,84 @@
 </div>
 <!-- Trust Badges Section ends -->
 
+<section class="py-80 ct-02 content-section division" id="company">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">About <span class="color--green-500">Right Borrow</span></h2>
+                    <p class="s-16 color--grey mt-0">Enabling You to Achieve More With Confidence</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="hero-7-img d-flex justify-content-center align-items-start mt-0">
+                        <img src="{{ asset('front/images/about-img.png') }}" alt="rightborrow" class="img-fluid p-0">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="txt-block right-column">
+                        <p>Right Borrow is your trusted partner for financial solutions. We work with the best NBFCs to
+                            make
+                            it easy and quick to get a loan. Our team of experts makes sure that the process from
+                            application to approval goes smoothly and is clear, so you can reach your goals without any
+                            unnecessary delays. Whether it is funding your dream, managing expenses, or growing your
+                            business, Right Borrow makes financial empowerment simple and accessible for everyone.</p>
+
+                    </div>
+                    <div class="txt-block right-column">
+                        <ul class="simple-list ms-0">
+                            <p>With Right Borrow, you are not just applying for a loan; you are partnering with a
+                                network
+                                that prioritizes your success. We provide personalized guidance and ensure you get the
+                                best
+                                terms available.</p>
+                            <p>Experience a smarter, faster way to access finance and take confident steps toward your
+                                financial goals.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Our Partners section start  -->
+<section id="integrations-2" class="py-80 integrations-section bg--green-100">
+    <div class="container">
+        <div class="r-12 text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-10">
+                    <div class="section-title mb-40">
+                        <h2 class="s-28 mb-5">Partnering With <span class="color--green-500">The Best</span></h2>
+                        <p class="s-16 color--grey mt-0">We work with top NBFCs to provide the best service. </p>
+                    </div>
+                </div>
+            </div>
+            @php
+            $lists = nbfcsList();
+            @endphp
+
+            <div class="bank-crousel">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="owl-carousel brands-carousel-6 emi-carousel">
+                            {!! $lists['carousel'] !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Partners section end  -->
+
+
+
+
 <!-- Products Intro section starts -->
 <section id="products" class="py-80 features-section division">
     <div class="container">
@@ -375,62 +279,60 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 align-items-center m-auto rounded-3">
-                <div
-                    class="row fbox-wrapper text-center align-items-center m-auto border border--grey shadow rounded-3 mb-4">
-                    <div class="col-12 col-lg-12">
-                        <div class="img-block right-column text-center">
-                            <img class="img-fluid light-theme-img"
-                                src="{{ asset('front/images/Easy-Self-Apply-ai.png') }}" alt="feature-image">
+                <div id="hero-5" class="px-4 py-5">
+                    <div class="row fbox-wrapper text-center align-items-center m-auto">
+                        <div class="col-12 col-lg-7">
+                            <div class="txt-block right-column text-start">
+                                <h3 class="s-22 w-700 mb-2">Quick Self-Apply</h3>
+                                <p class="mb-2">
+                                    Get access to seamless digital loan consultation, quick login links, and exclusive
+                                    personalized offers from our trusted NBFC partners.
+                                </p>
+                                <a href="{{ route('self.apply.main') }}" class="btn r-04 btn--theme hover--tra-black">
+                                    Apply Now
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-12 bg--green-100 p-4 rounded-3">
-                        <div class="txt-block right-column">
-                            <h3 class="s-22 w-700 mb-2">Quick Self-Apply</h3>
-                            <p class="mb-2">
-                                Get access to seamless digital loan consultation, quick login links, and exclusive
-                                personalized offers from our trusted NBFC partners.
-                            </p>
-                            <a href="{{ route('self.apply.main') }}" class="btn r-04 btn--theme hover--tra-black">
-                                Apply Now
-                            </a>
+                        <div class="col-12 col-lg-5">
+                            <div class="img-block right-column text-lg-center text-end">
+                                <img class="img-fluid light-theme-img"
+                                    src="{{ asset('front/images/Quick-Self-Apply-img-1.png') }}" alt="feature-image">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 align-items-center m-auto mt-0 rounded-3">
-                <div
-                    class="row fbox-wrapper text-center align-items-center m-auto border border--grey shadow rounded-3">
-                    <div class="col-12 col-lg-12">
-                        <div class="img-block right-column text-center">
-                            <img class="img-fluid light-theme-img"
-                                src="{{ asset('front/images/Hire-Loan-Agent-ai.png') }}" alt="feature-image">
+            <div class="col-12 col-lg-6 align-items-center m-auto  rounded-3">
+                <div id="hero-5" class="px-4 py-5">
+                    <div class="row fbox-wrapper text-center align-items-center m-auto">
+                        <div class="col-12 col-lg-7">
+                            <div class="txt-block left-column text-start">
+                                <h3 class="s-22 w-700 mb-2">Hire Loan Agent</h3>
+                                <p class="mb-2">
+                                    Allow our experienced loan experts to handle the entire process while you enjoy a
+                                    seamless and hassle-free loan experience.
+                                </p>
+                                <a href="{{ route('loan.agent.main') }}" class="btn r-04 btn--theme hover--tra-black">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="img-block right-column text-lg-center text-end">
+                                <img class="img-fluid light-theme-img"
+                                    src="{{ asset('front/images/Hire-Loan-Agent-img-2.png') }}" alt="feature-image">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 bg--green-100 p-4 rounded-3">
-                        <div class="txt-block left-column">
-                            <h3 class="s-22 w-700 mb-2">Hire Loan Agent</h3>
-                            <p class="mb-2">
-                                Allow our experienced loan experts to handle the entire process while you enjoy a
-                                seamless and hassle-free loan experience.
-                            </p>
-                            <a href="{{ route('loan.agent.main') }}" class="btn r-04 btn--theme hover--tra-black">
-                                Apply Now
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </section>
 <!-- Products Intro section ends -->
 
 <!-- Quick and swift steps section starts -->
-<!-- <section id="features-2" class="py-80 bg--green-100 features-section division">
+<section class="py-80 ct-04 content-section division bg--green-100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
@@ -440,99 +342,85 @@
                 </div>
             </div>
         </div>
-
-        <div class="fbox-wrapper text-center">
-            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-2">
-                <div class="col">
-                    <div class="fbox-11 fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-mobile-search"></span>
-                            </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 order-first order-md-2">
+                <div class="txt-block left-column">
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">1</div>
                         </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Begin by entering your mobile number and bank-registered name.</p>
+                        <div class="cbox-2-txt">
+                            <p class="mt-0">Begin by entering your mobile number and bank-registered name.
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col">
-                    <div class="fbox-11  fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-computer"></span>
-                            </div>
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">2</div>
                         </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Our system will evaluate your eligibility and display pre-approved loan
-                                offers. This is not a final offer.
+                        <div class="cbox-2-txt">
+                            <p class="mt-0">
+                                Our system will evaluate your eligibility and display pre-approved loan offers. This is
+                                not a final offer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">3</div>
+                        </div>
+                        <div class="cbox-2-txt">
+                            <p class="mt-0 mb-0">Purchase a plan that best suits your needs to gain access to the
+                                displayed
+                                pre-approved loan offers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">4</div>
+                        </div>
+                        <div class="cbox-2-txt">
+                            <p class="mt-0 mb-0">Our login team will contact you within 24-48 hours to verify your
+                                information and walk you through the documentation process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">5</div>
+                        </div>
+                        <div class="cbox-2-txt">
+                            <p class="mt-0 mb-0">
+                                The NBFC will assess your profile and documents in accordance with their applicable
+                                terms and conditions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cbox-2 process-step">
+                        <div class="ico-wrap">
+                            <div class="cbox-2-ico bg--theme color--white">6</div>
+                        </div>
+                        <div class="cbox-2-txt">
+                            <p class="mt-0 mb-0">The NBFC will determine the final approval, sanction, and disbursement
+                                of
+                                the loan based on their policies and regulations.
                             </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="fbox-11  fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-credit-card"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Purchase a plan that best suits your needs to gain access to the displayed
-                                pre-approved loan offers.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-6 order-last order-md-2">
+                <div class="img-block mb-0">
+                    <img src="{{ asset('front/images/how-it-works.png') }}" alt="rightborrow"
+                        class="img-fluid p-0 w-100">
                 </div>
-
-                <div class="col">
-                    <div class="fbox-11  fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-time"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">Our login team will contact you within 24-48 hours to verify your
-                                information and walk you through the documentation process.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="fbox-11  fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-check-1"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">The NBFC will assess your profile and documents in accordance with their
-                                applicable terms and conditions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="fbox-11  fbox--hover fb-1 r-12 h-100 w-100 bg-white p-4">
-                        <div class="fbox-ico ico-50 mb-0">
-                            <div class="shape-ico color--theme">
-                                <span class="flaticon-profits"></span>
-                            </div>
-                        </div>
-                        <div class="fbox-txt text-start ms-4">
-                            <p class="mt-0">The NBFC will determine the final approval, sanction, and disbursement of
-                                the loan based on their policies and regulations.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- Quick and swift steps section end -->
+
 
 <!-- eligibility calculator starts -->
 <section id="features-21" class="py-80 features-section division">
@@ -811,117 +699,118 @@
 <!-- Testimonioals section ends -->
 
 <!-- Contact Start -->
-<section id="contact" class="py-80 bg--green-100">
+<section id="contact" class="pt-0 pb-80">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 md-mb-50">
-                <div class="sec-title2 mb-40">
-                    <h2 class="s-28 mb-5">Let's Get In <span class="color--green-500">Touch</span></h2>
-                    <p class="description mt-0">Have any questions or need help? Send us a message, and we will contact
-                        you shortly.</p>
-                </div>
-                <div class="row gy-3 gx-3">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="address-item">
-                            <div class="address-text">
-                                <h6> Customer Support </h6>
-                                <p class="address-txt"><a
-                                        href="tel:{{ str_ireplace(" ","",env('COMPANY_MOBILE')) }}">{{ env('COMPANY_MOBILE') }}</a>
-                                </p>
-                            </div>
-                        </div>
+        <div class="bg--green-100 rounded-3">
+            <div class="row align-items-center justify-content-center p-4">
+                <div class="col-md-6 col-12 order-md-1 order-1 mb-md-0 mb-4">
+                    <div class="sec-title2 mb-30">
+                        <h2 class="s-28 mb-5">Let's Get In <span class="color--green-500">Touch</span></h2>
+                        <p class="description mt-0">Have any questions or need help? Send us a message, and we will
+                            contact
+                            you shortly.</p>
                     </div>
-
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="address-item">
-                            <div class="address-text">
-                                <h6> Mail Us </h6>
-                                <p class="address-txt"><a
-                                        href="mailto:{{ str_ireplace(" ","",env('COMPANY_SUPPORT_MAIL')) }}">{{ env('COMPANY_SUPPORT_MAIL') }}</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="address-item">
-                            <div class="address-text">
-                                <h6> Address </h6>
-                                <p class="address-txt">{{ env('COMPANY_ADDRESS') }}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="address-item">
-                            <div class="address-text">
-                                <h6> Working Hours </h6>
-                                <p class="address-txt">
-                                    Monday to Saturday: 10:00 AM - 5:00 PM<br>
-                                    Sunday: Closed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 py-md-0 py-4">
-                <div class="h-100">
-                    <div class="card shadow border h-100">
-                        <div class="card-body">
-                            <p class="w-400 mb-20">
-                                Fill out the form below and you'll hear from us soon.
-                            </p>
-                            <form method="post" action="{{ route('front.contact.us.store') }}"
-                                class="contact-form career-form" enctype="multipart/form-data">
-                                <div class="row gx-2 gy-2">
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group form-floating s-15">
-                                            <input id="form_name" name="fullname" type="text"
-                                                class="form-control name mb-0" placeholder="">
-                                            <label for="firstname">Full Name *</label>
-                                        </div>
-                                        @component('components.ajax-error',['field'=>'fullname'])@endcomponent
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group form-floating">
-                                            <input id="form_mobile" type="text" name="mobile"
-                                                class="numeric-input mb-0 form-control mobile" placeholder=""
-                                                minlength="10" maxlength="10" inputmode="numeric">
-                                            <label for="form_mobile">Mobile *</label>
-                                        </div>
-                                        @component('components.ajax-error',['field'=>'mobile'])@endcomponent
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group form-floating">
-                                            <input id="form_email" type="email" name="email"
-                                                class="mb-0 form-control email" placeholder="">
-                                            <label for="form_email">Email *</label>
-                                        </div>
-                                        @component('components.ajax-error',['field'=>'email'])@endcomponent
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group form-floating">
-                                            <input id="form_subject" type="text" name="subject"
-                                                class="mb-0 form-control subject" placeholder="">
-                                            <label for="form_subject">Subject *</label>
-                                        </div>
-                                        @component('components.ajax-error',['field'=>'subject'])@endcomponent
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group form-floating">
-                                            <textarea id="form_message" name="desc" class="mb-0 form-control message"
-                                                placeholder="" style="height: 150px"></textarea>
-                                            <label for="form_message">Message *</label>
-                                        </div>
-                                        @component('components.ajax-error',['field'=>'desc'])@endcomponent
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button type="submit" class="s-14 btn btn--green-400 hover--tra-black submit"
-                                            id="submit-btn">Submit Request</button>
-                                    </div>
+                    <div class="row gy-3 gx-3">
+                        <div class="col-md-12 col-12">
+                            <div class="address-item">
+                                <div class="address-text">
+                                    <h6 class="color--green-500"> Customer Support </h6>
+                                    <p class="address-txt"><a
+                                            href="tel:{{ str_ireplace(" ","",env('COMPANY_MOBILE')) }}">{{ env('COMPANY_MOBILE') }}</a>
+                                    </p>
                                 </div>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <div class="address-item">
+                                <div class="address-text">
+                                    <h6 class="color--green-500"> Mail Us </h6>
+                                    <p class="address-txt"><a
+                                            href="mailto:{{ str_ireplace(" ","",env('COMPANY_SUPPORT_MAIL')) }}">{{ env('COMPANY_SUPPORT_MAIL') }}</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <div class="address-item">
+                                <div class="address-text">
+                                    <h6 class="color--green-500"> Address </h6>
+                                    <p class="address-txt">{{ env('COMPANY_ADDRESS') }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <div class="address-item">
+                                <div class="address-text">
+                                    <h6 class="color--green-500"> Working Hours </h6>
+                                    <p class="address-txt">
+                                        Monday to Saturday: 10:00 AM - 5:00 PM<br>
+                                        Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 md-mb-50 order-md-2 order-2">
+                    <div class="h-100">
+                        <div class="card shadow border h-100">
+                            <div class="card-body">
+                                <p class="w-400 mb-20">
+                                    Fill out the form below and you'll hear from us soon.
+                                </p>
+                                <form method="post" action="{{ route('front.contact.us.store') }}"
+                                    class="contact-form career-form" enctype="multipart/form-data">
+                                    <div class="row gx-2 gy-2">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group form-floating s-15">
+                                                <input id="form_name" name="fullname" type="text"
+                                                    class="form-control name mb-0" placeholder="">
+                                                <label for="firstname">Full Name *</label>
+                                            </div>
+                                            @component('components.ajax-error',['field'=>'fullname'])@endcomponent
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group form-floating">
+                                                <input id="form_mobile" type="text" name="mobile"
+                                                    class="numeric-input mb-0 form-control mobile" placeholder=""
+                                                    minlength="10" maxlength="10" inputmode="numeric">
+                                                <label for="form_mobile">Mobile *</label>
+                                            </div>
+                                            @component('components.ajax-error',['field'=>'mobile'])@endcomponent
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group form-floating">
+                                                <input id="form_email" type="email" name="email"
+                                                    class="mb-0 form-control email" placeholder="">
+                                                <label for="form_email">Email *</label>
+                                            </div>
+                                            @component('components.ajax-error',['field'=>'email'])@endcomponent
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group form-floating">
+                                                <input id="form_subject" type="text" name="subject"
+                                                    class="mb-0 form-control subject" placeholder="">
+                                                <label for="form_subject">Subject *</label>
+                                            </div>
+                                            @component('components.ajax-error',['field'=>'subject'])@endcomponent
+                                        </div>
+                                        <div class="col-md-12 col-12">
+                                            <div class="form-group form-floating">
+                                                <textarea id="form_message" name="desc"
+                                                    class="mb-0 form-control message" placeholder=""
+                                                    style="height: 150px"></textarea>
+                                                <label for="form_message">Message *</label>
+                                            </div>
+                                            @component('components.ajax-error',['field'=>'desc'])@endcomponent
+                                        </div>
+                                        <div class="col-md-12 col-12 text-start">
+                                            <button type="submit"
+                                                class="s-14 btn btn--green-400 hover--tra-black submit"
+                                                id="submit-btn">Submit Request</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

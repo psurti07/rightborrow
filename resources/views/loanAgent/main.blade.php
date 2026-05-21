@@ -63,10 +63,10 @@
 </style>
 @endpush
 @section('content')
-<section class="bg--white-100 bg--fixed hero-section pt-100 pb-80">
+<section id="hero-201" class="bg--white-100 bg--fixed">
     <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 align-items-center m-auto self-apply-form  mb-lg-0 mb-3">
                 <div id="hero-8-form" class="border border-primary r-06">
                     <h4 class="s-20 w-700 mb-2">Apply in <span class="color--green-500">5 Minutes</span></h4>
                     <p class="s-16">Get instant pre-approved offers.</p>
@@ -135,6 +135,11 @@
                     </form>
                 </div>
             </div>
+               <div class="col-lg-6 col-md-12 col-12 m-auto">
+                <div class="hero-7-img bg--green-100 rounded-3 mt-0 text-center">
+                    <img src="{{ asset('front/images/loan-agent-img.png') }}" alt="rightborrow" class="img-fluid p-0">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -180,11 +185,12 @@
         </div>
         <div class="fbox-wrapper text-center">
             <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-1 r-12 border">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-layers-1"></span>
+                           <img src="{{ asset('front/images/Strategic-Lending-Network.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
                         <div class="fbox-txt">
@@ -193,11 +199,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-computer-1"></span>
+                          <img src="{{ asset('front/images/Completely-Online-Process.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
                         <div class="fbox-txt">
@@ -206,11 +213,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-click-1"></span>
+                             <img src="{{ asset('front/images/Self-Apply-Feature.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
                         <div class="fbox-txt">
@@ -219,11 +227,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="fbox-8 fbox--hover fb-3 r-12 border">
+                <div class="col mb-lg-0 mb-2">
+                    <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <span class="flaticon-tech-support"></span>
+                    <img src="{{ asset('front/images/Hire-Loan-Agent.png') }}" alt="rightborrow"
+                                    class="img-fluid">
                             </div>
                         </div>
                         <div class="fbox-txt">

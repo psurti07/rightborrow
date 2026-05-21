@@ -11,14 +11,14 @@
 @section('content')
 <section class="hero-section bg--scroll pb-lg-80 pt-110">
     <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center">
             <div class="col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
                     <div class="img-block">
-                        <img src="{{ asset('front/images/offer/offer-page-img-2.png') }}" alt="selfapply nbfc list" class="img-fluid">
+                        <img src="{{ asset('front/images/offer/self-apply-mega-offer.jpg') }}" alt="selfapply nbfc list" class="img-fluid rounded-3">
                     </div>
             </div>
 
-            <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-3">
+            <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-lg-0 mb-35">
                 <div id="hero-8-form" class="r-06">
                     <h4 class="s-22 text-dark mb-1"> Get Loan up to <span class="color--green-500">&#8377;10 LAKHS</span> from Affiliate NBFCs!</h4>
                     <p class="s-14">Unlock Your Personalized Pre-Approved Loan Offers</p>
