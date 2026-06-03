@@ -60,7 +60,6 @@ body {
         <div class="container-xxl " id="kt_content_container">
             <div class="row g-8 mt-3 mb-10">
                 @if($message!=NULL)
-                    <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <div class="alert alert-dismissible bg-light-danger border border-danger d-flex flex-column flex-sm-row p-5">
                                 <i class="ki-duotone ki-information-5 fs-2hx text-danger me-4 mb-5 mb-sm-0"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
@@ -84,11 +83,10 @@ body {
                                 </button>
                             </div>
                         </div>
-                    </div>
-                @endif
+                 @endif
 
                 @foreach($offers as $offer)
-                <div class="col-md-4 col-lg-4 col-xxl-4 mb-10">
+                <div class="col-md-6 col-lg-4 col-xxl-4 mb-10">
                     @if($isExpired)
                     <div class="offer-card locked">
                     @endif

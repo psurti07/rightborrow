@@ -5,7 +5,7 @@
             <!-- FOOTER LOGO -->
             <div class="col-xl-4 mb-sm-20 mb-md-20">
                 <div class="footer-info">
-                    <img class="footer-logo" src="{{ asset('front/images/logo/logo-w.png') }}" alt="{{ env('APP_NAME') }}" width="140" height="50" />
+                    <img class="footer-logo" src="{{ asset('front/images/logo/logo-w.png') }}" alt="{{ env('APP_NAME') }}" />
                     <div class="fs-6 mt-3 mb-5 text-light">
                         <p>Right Borrow is a trusted financial consultation platform that simplifies borrowing with expert guidance and tailored solutions, allowing you to confidently achieve your financial goals.</p>
                     </div>
@@ -99,7 +99,7 @@
                     </p>
                     <h6 class="s-14 w-700 mt-15 kbz-h6 text-light" style="margin-bottom:5px!important;">Address</h6>
                     <p class="footer-mail-link ico-25">
-                        <a href="javascript:;" class="text-light">{{ env('COMPANY_ADDRESS') }}</a>
+                        <p class="text-light">{{ env('COMPANY_ADDRESS') }}</p>
                     </p>
                 </div>
             </div>

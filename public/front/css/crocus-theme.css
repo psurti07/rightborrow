@@ -689,7 +689,7 @@ a {
 }
 
 a:hover {
-    color: #1b4577!important;
+    color: #cfac52 !important;
     text-decoration: none;
 }
 
@@ -2531,9 +2531,8 @@ p.video-txt-sm {
 /*------------------------------------------*/
 
 .desktoplogo img {
-    width: auto;
+    width: 140px;
     max-width: inherit;
-    max-height: 60px;
 }
 
 .blog-header .desktoplogo img {
@@ -3491,7 +3490,7 @@ span.sm-info {
 #hero-5 .wave-shape-bottom path {
     fill: #fff;
 }
-
+ 
 #hero-5 {
     background-image: url(../images/Hire-Loan-Agent-Bg.png);
     padding-top: 140px;
@@ -3502,6 +3501,7 @@ span.sm-info {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
+    min-height: 315px;
 }
 
 
@@ -3565,7 +3565,7 @@ span.sm-info {
 
 #hero-8 {
     position: relative;
-    background-image: url(../images/homepage-bg.png);
+    background-image: url(../images/home-bg.jpg);
     padding-top: 130px;
     padding-bottom:140px;
 }
@@ -3925,7 +3925,7 @@ span.sm-info {
   background: #fff;
     /* background-image: url(../images/site-img-4.jpg); */
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 80px;
 }
 
 #hero-202 {
@@ -4305,7 +4305,7 @@ span.sm-info {
 #hero-8-form .btn,
 #hero-22-form .btn {
     width: 100%;
-    height: 58px;
+    height: 58px !important;
     padding: 16px;
 }
 
@@ -5699,7 +5699,6 @@ h5.h5-title {
 }
 
 .ct-04 .img-block img {
-    max-width: none;
     display: inline-block;
 }
 
@@ -6224,12 +6223,12 @@ p.rbox-2-txt span {
 
 .review-1 {
     padding: 25px 20px 25px;
-    margin: 10px 10px 30px;
+    margin: 10px 10px 1px 10px !important;
     transition: all 0.35s ease;
     position: relative;
     overflow: hidden;
-        border: 1px solid transparent !important;
-
+    border: 1px solid transparent !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .review-1.block-border {
@@ -6304,7 +6303,7 @@ p.rbox-2-txt span {
 /*------------------------------------------*/
 
 .review-1 .author-data {
-    margin-top: 22px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -7748,7 +7747,7 @@ span.release-date span {
 
 .faqs-section .accordion-thumb {
     margin: 0;
-    padding: 20px 25px;
+    padding: 20px 35px 20px 20px;
     cursor: pointer;
     position: relative;
 }
@@ -8816,9 +8815,8 @@ span.release-date span {
 
 img.footer-logo,
 img.footer-logo-dark {
-    width: auto;
+    width: 130px;
     max-width: inherit;
-    max-height: 75px;
 }
 
 #footer-10 img.footer-logo {
@@ -9430,12 +9428,17 @@ img.footer-logo-dark {
 
 #login,
 #signup {
-    background: #f3f8ff;
+    background: #f3f8ff; 
     min-height: 100vh;
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+  
+ 
 }
 
+ 
 #reset-password {
     background: url(../images/reset-password.jpg);
     background-position: center center;
@@ -9586,7 +9589,7 @@ img.footer-logo-dark {
 
 .login-1 .register-page-form,
 .signup-1 .register-page-form {
-    padding: 20px 30px;
+    padding: 30px;
     background-color: #FFF;
     border: 1px solid #ebebeb;
     border-radius: 10px;

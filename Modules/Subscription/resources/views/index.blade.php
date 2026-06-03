@@ -9,7 +9,7 @@
             <div class="row g-3 g-xl-10 mb-xl-10">
                 
                 @foreach($lists as $list)
-                <div class="col-md-4 col-lg-4 col-xl-4">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="d-print-none border border-dashed border-gray-300 card-rounded h-lg-100 min-w-md-350px p-9 bg-white">
                         <!--begin::Labels-->
                         <div class="mb-6">   

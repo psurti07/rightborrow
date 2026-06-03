@@ -144,7 +144,7 @@
 </section>
 
 <!-- Affiliate NBFCs section starts -->
-<section id="integrations-2" class="pt-0 pb-80 integrations-section">
+<section id="integrations-2" class="py-80 integrations-section bg--green-100">
     <div class="container">
         <div class="r-12 text-center">
             <div class="row justify-content-center">
@@ -172,7 +172,7 @@
 </section>
 <!-- Affiliate NBFCs section ends -->
 
-<section id="features-6" class="pt-0 pb-80 features-section division">
+<section id="features-6" class="py-80 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">

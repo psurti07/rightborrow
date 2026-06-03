@@ -12,7 +12,7 @@
                 <div class="col-md-12 text-center">
                     <div class="left-column">
                         <span class="section-id"></span>
-                        <h2 class="w-700 mb-5">Career <span class="color--green-500">with us</span></h2>
+                        <h2 class="s-28 mb-5">Career with us</h2>
                         <p class="s-16 color--grey  mt-0">Growth. Fun. Excitement. Challenges – all in one place.</p>
                     </div>
                 </div>

@@ -53,13 +53,20 @@
    <div id="page" class="page font--jakarta">
         <div id="login" class="bg--fixed login-1 login-section division">
             <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6 col-lg-6 align-items-center m-auto">	
-                        <div class="register-page-form">
+                <div class="row align-items-center justify-content-center bg-white">
+                    <div class="col-md-12 col-lg-6 col-12 order-lg-1 order-2">
+                        <div class="d-flex justify-content-center align-items-start">
+                            <div class="img-block">
+                                <img src="{{ asset('front/images/Login-img.png') }}" alt="login now" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 align-items-center m-auto order-lg-2 order-1">	
+                        <div class="register-page-form border-0">
                             <!-- TITLE -->
                             <div class="col-md-12">
                                 <div class="register-form-title">
-                                    <img src="{{ asset('front/images/logo/logo.png') }}" width="200" alt="{{ env('APP_NAME') }}">
+                                    <img src="{{ asset('front/images/logo/logo.png') }}" width="140" alt="{{ env('APP_NAME') }}">
                                     <h4 class="mt-20 w-700">Forgot Password</h4>
                                     <p>Please enter your Mobile number you have created at registration.</p>
                                 </div>
@@ -79,7 +86,7 @@
                                 </div>
                                 <!-- Sign Up Link -->
                                 <div class="col-md-12">
-                                    <p class="create-account text-center">
+                                    <p class="create-account text-center mt-0">
                                         Have an account? <a href="{{ route('customer.login') }}" class="color--theme">Sign In</a>
                                     </p>
                                 </div>
@@ -87,13 +94,6 @@
                         </div>	
                     </div>	
 
-                    <!-- <div class="col-md-6 col-lg-6 col-12">
-                        <div class="d-flex justify-content-center align-items-start">
-                            <div class="img-block">
-                                <img src="{{ asset('front/images/Login-page-1.png') }}" alt="login now" class="img-fluid">
-                            </div>
-                        </div>
-                    </div> -->
                 </div>	  <!-- End row -->	
             </div> <!-- End container -->		
         </div>	<!-- END LOGIN PAGE -->

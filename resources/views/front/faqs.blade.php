@@ -12,7 +12,10 @@
                 <div class="col-md-12 text-center">
                     <div class="txt-block left-column">
                         <span class="section-id"></span>
-                        <h2 class="w-700 mb-5">Frequently Asked <span class="color--green-500">Questions</span></h2>
+                        <h2 class="s-28 mb-5">Frequently Asked Questions</h2>
+                          <p class="s-16 color--grey mt-0">
+                            Have a query? Raise a request with RightBorrow and get quick assistance for all your loan needs.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -27,9 +30,9 @@
                 <div class="col-lg-12 col-xl-12">
                     <div class="accordion-wrapper">
                         <ul class="accordion">
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">1. What can you do with a personal loan?</h6>
+                                    <h6 class="s-16 w-500">1. What can you do with a personal loan?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -39,9 +42,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">2. What are the personal loan eligibility requirements?</h6>
+                                    <h6 class="s-16 w-500">2. What are the personal loan eligibility requirements?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -63,9 +66,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">3. What documents do I need to apply for a personal loan? </h6>
+                                    <h6 class="s-16 w-500">3. What documents do I need to apply for a personal loan? </h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -96,9 +99,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">4. Does your credit score matter when you apply for a personal loan?</h6>
+                                    <h6 class="s-16 w-500">4. Does your credit score matter when you apply for a personal loan?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -108,9 +111,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">5. What can I do to improve my chances of being approved for a personal loan?</h6>
+                                    <h6 class="s-16 w-500">5. What can I do to improve my chances of being approved for a personal loan?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -120,9 +123,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">6. Do personal loans have any direct tax advantages?</h6>
+                                    <h6 class="s-16 w-500">6. Do personal loans have any direct tax advantages?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">
@@ -133,9 +136,9 @@
                                 </div>
                             </li>
 
-                            <li class="accordion-item mb-10">
+                            <li class="accordion-item mb-0">
                                 <div class="accordion-thumb">
-                                    <h6 class="w-600">7. In addition to credit scores, what other factors do lenders consider when approving personal loans?</h6>
+                                    <h6 class="s-16 w-500">7. In addition to credit scores, what other factors do lenders consider when approving personal loans?</h6>
                                 </div>
                                 <div class="accordion-panel">
                                     <div class="accordion-panel-item">

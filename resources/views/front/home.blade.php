@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6 col-12">
-                <div class="hero-7-txt bg-white px-4 py-5 rounded-3 fbox-8 fb-1 r-12 border">
+                <div class="hero-7-txt px-md-4 py-md-5 rounded-3 fbox-8 fb-1 r-12 border">
                     <div>
                         <h1 class="s-40 w-700">Turn All Your Financial Goals Into <span class="color--green-500">Reality
                                 In Style</span></h1>
@@ -72,7 +72,7 @@
                     <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <img src="{{ asset('front/images/Expert-Financial-Consultation.png') }}"
+                                <img src="{{ asset('front/images/Expert-Financial-Consultation-01.png') }}"
                                     alt="rightborrow" class="img-fluid">
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                     <div class="fbox-8 faq-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                <img src="{{ asset('front/images/Choose-Your-Preference.png') }}" alt="rightborrow"
+                                <img src="{{ asset('front/images/Choose-Your-Preference-01.png') }}" alt="rightborrow"
                                     class="img-fluid">
                             </div>
                         </div>
@@ -120,62 +120,91 @@
 <!-- why rightborrow section ends -->
 
 <!-- Trust Badges Section starts -->
-<div id="statistic-1" class=" bg--green-400 ct-03 py-50 statistic-section division">
+<div id="statistic-1" class="ct-03 py-80 statistic-section statistic-wrapper division">
     <div class="container">
-        <div class="statistic-5-wrapper">
-            <div class="row row-cols-2 row-cols-md-4">
-                <div class="col sec-1">
-                    <div id="sb-5-1" class="text-center">
-                        <div class="statistic-block">
-                            <div class="statistic-digit">
-                                <h2 class="s-30 w-700 mb-10 text-white">
-                                    <span class="count-element">5500</span>+
-                                </h2>
-                            </div>
-                            <div class="statistic-txt">
-                                <h5 class="s-16 w-500 text-white">Happy Customer</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col sec-2">
-                    <div id="sb-5-3" class="text-center">
-                        <div class="statistic-block">
-                            <div class="statistic-digit">
-                                <h2 class="s-30 w-700 mb-10 text-white">
-                                    <span class="count-element">5</span>Cr+
-                                </h2>
-                            </div>
-                            <div class="statistic-txt">
-                                <h5 class="s-16 w-500 text-white">Disbursal</h5>
+        <div class="row">
+            <div class="col-lg-6 col-md-6"></div>
+            <div class="col-lg-6 col-md-6">
+                <div class="statistic-5-wrapper">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+                        <div class="col sec-1">
+                            <div id="sb-5-1" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
+                                <div class="fbox-ico ico-50">
+                                    <div class="shape-ico color--theme">
+                                        <img src="http://127.0.0.1:8000/front/images/Happy-Customer.png"
+                                            alt="rightborrow" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="statistic-block ml-30">
+                                    <div class="statistic-digit ">
+                                        <h2 class="s-30 w-700 mb-10 text-start">
+                                            <span class="count-element">5500</span>+
+                                        </h2>
+                                    </div>
+                                    <div class="statistic-txt text-start">
+                                        <h5 class="s-16 w-500">Happy Customer</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col sec-3">
-                    <div id="sb-5-2" class="text-center">
-                        <div class="statistic-block">
-                            <div class="statistic-digit">
-                                <h2 class="s-30 w-700 mb-10 text-white">
-                                    <span class="count-element">8</span>+
-                                </h2>
-                            </div>
-                            <div class="statistic-txt">
-                                <h5 class="s-16 w-500 text-white">NBFC Partners</h5>
+                        <div class="col sec-2">
+                            <div id="sb-5-3" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
+                                <div class="fbox-ico ico-50">
+                                    <div class="shape-ico color--theme">
+                                        <img src="http://127.0.0.1:8000/front/images/disbursal.png" alt="rightborrow"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="statistic-block ml-30">
+                                    <div class="statistic-digit">
+                                        <h2 class="s-30 w-700 mb-10 text-start">
+                                            <span class="count-element">5</span>Cr+
+                                        </h2>
+                                    </div>
+                                    <div class="statistic-txt text-start">
+                                        <h5 class="s-16 w-500">Disbursal</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col sec-4">
-                    <div id="sb-5-4" class="text-center">
-                        <div class="statistic-block">
-                            <div class="statistic-digit">
-                                <h2 class="s-30 w-700 mb-10 text-white">
-                                    <span class="count-element">100</span>%
-                                </h2>
+                        <div class="col sec-3">
+                            <div id="sb-5-2" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
+                                <div class="fbox-ico ico-50">
+                                    <div class="shape-ico color--theme">
+                                        <img src="http://127.0.0.1:8000/front/images/NBFC-Partners.png"
+                                            alt="rightborrow" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="statistic-block ml-30">
+                                    <div class="statistic-digit">
+                                        <h2 class="s-30 w-700 mb-10 text-start">
+                                            <span class="count-element">8</span>+
+                                        </h2>
+                                    </div>
+                                    <div class="statistic-txt text-start">
+                                        <h5 class="s-16 w-500">NBFC Partners</h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="statistic-txt">
-                                <h5 class="s-16 w-500 text-white">Digital Process</h5>
+                        </div>
+                        <div class="col sec-4">
+                            <div id="sb-5-4" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
+                                <div class="fbox-ico ico-50">
+                                    <div class="shape-ico color--theme">
+                                        <img src="http://127.0.0.1:8000/front/images/Digital-Process.png"
+                                            alt="rightborrow" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="statistic-block ml-30">
+                                    <div class="statistic-digit">
+                                        <h2 class="s-30 w-700 mb-10 text-start">
+                                            <span class="count-element">100</span>%
+                                        </h2>
+                                    </div>
+                                    <div class="statistic-txt text-start">
+                                        <h5 class="s-16 w-500">Digital Process</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,12 +225,12 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="hero-7-img d-flex justify-content-center align-items-start mt-0">
-                        <img src="{{ asset('front/images/about-img.png') }}" alt="rightborrow" class="img-fluid p-0">
+                <div class="col-lg-4 col-md-6 col-12 order-md-1 order-2">
+                    <div class="hero-7-img mt-0 ps-0">
+                        <img src="{{ asset('front/images/about-img-01.png') }}" alt="rightborrow" class="img-fluid p-0">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-lg-8 col-md-6 col-12 order-md-2 order-1">
                     <div class="txt-block right-column">
                         <p>Right Borrow is your trusted partner for financial solutions. We work with the best NBFCs to
                             make
@@ -227,8 +256,6 @@
         </div>
     </div>
 </section>
-
-
 
 
 <!-- Our Partners section start  -->
@@ -262,7 +289,57 @@
 <!-- Our Partners section end  -->
 
 
-
+<section class="application-process pt-80 pb-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-40">
+                       <h2 class="s-28 mb-5"> Get Your Loan Approved In <span class="color--green-500">5 Easy Steps</span>
+                    </h2>
+                    <p class="s-16 color--grey mt-0"> A quick and seamless journey to help you get the best loan offers
+                        without hassle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Loan Details</h4>
+                    <p>Enter loan amount and requirements.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Personal Details</h4>
+                    <p>Provide your basic information.</p>
+                </div>
+            </div>
+            <div class="step current">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Unlock Offers</h4>
+                    <p>View eligible loan offers instantly.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Purchase Plan</h4>
+                    <p>Select the plan that suits you best.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Personalized Offers</h4>
+                    <p>Receive customized financing options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Products Intro section starts -->
 <section id="products" class="py-80 features-section division">
@@ -330,6 +407,265 @@
     </div>
 </section>
 <!-- Products Intro section ends -->
+
+<!-- eligibility calculator starts -->
+<section id="features-21" class="pt-0 pb-80 features-section division">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-10">
+                <div class="section-title mb-40">
+                    <h2 class="s-28 mb-5">Calculate Your <span class="color--green-500">EMI In Seconds </span></h2>
+                    <p class="s-16 color--grey mt-0">Plan repayments with clarity before proceeding.</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-30 bg--white-100 shadow border-grey-1 r-20">
+            <div class="row">
+                <div class="col-md-7 order-first order-md-2">
+                    <div id="emicalculatorinnerformwrapper">
+                        <form id="emicalculatorform" class="comment-form">
+                            <div class="form-horizontal" id="emicalculatorinnerform">
+                                <div class="row">
+                                    <!-- Loan Amount slider section starts -->
+                                    <div class="col-md-12">
+                                        <div class="row form-group lamount flex-display align-items-center">
+                                            <label class="col-6 control-label s-18 w-500" for="loanamount">Loan
+                                                amount</label>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text color--purple-500">₹</span>
+                                                        </div>
+                                                        <input class="form-control custm-box w-400" id="loanamount"
+                                                            name="loanamount" value="10,00,000" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="loanamountslider"></div>
+                                        <div id="loanamountsteps" class="steps">
+                                            <span class="tick" style="left: 0%;">| <br>
+                                                <span class="marker">50K</span>
+                                            </span>
+                                            <span class="tick d-none d-sm-block" style="left: 12.5%;">| <br>
+                                                <span class="marker">10L</span>
+                                            </span>
+                                            <span class=tick style="left: 25%;">| <br>
+                                                <span class=marker>20L</span>
+                                            </span>
+                                            <span class="tick d-none d-sm-block" style="left: 37.5%;">| <br>
+                                                <span class="marker">30L</span>
+                                            </span>
+                                            <span class="tick" style="left: 50%;">| <br>
+                                                <span class="marker">40L</span>
+                                            </span>
+                                            <span class="tick d-none d-sm-block" style="left: 62.5%;">| <br>
+                                                <span class="marker">50L</span>
+                                            </span>
+                                            <span class="tick" style="left: 75%;">| <br>
+                                                <span class="marker">60L</span>
+                                            </span>
+                                            <span class="tick d-none d-sm-block" style="left: 87.5%;">| <br>
+                                                <span class="marker">70L</span>
+                                            </span>
+                                            <span class="tick" style="left: 100%;">| <br>
+                                                <span class="marker">80L</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Loan Amount slider section ends -->
+                                    <!-- Interest Rate slider section starts -->
+                                    <div class="col-md-12 mt-100">
+                                        <div class="row form-group lint flex-display align-items-center">
+                                            <label class="col-6 s-18 w-500 control-label" for="loaninterest">Interest
+                                                rate</label>
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">%</span>
+                                                    </div>
+                                                    <input class="form-control custm-box w-400" id="loaninterest"
+                                                        name="loaninterest" value="10.5" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="loaninterestslider"></div>
+                                        <div id="loanintereststeps" class="steps">
+                                            <span class="tick" style="left: 0%;">| <br>
+                                                <span class="marker">5</span>
+                                            </span>
+                                            <span class="tick" style="left: 16.67%;">| <br>
+                                                <span class="marker">7.5</span>
+                                            </span>
+                                            <span class="tick" style="left: 33.34%;">| <br>
+                                                <span class="marker">10</span>
+                                            </span>
+                                            <span class="tick" style="left: 50%;">| <br>
+                                                <span class="marker">12.5</span>
+                                            </span>
+                                            <span class="tick" style="left: 66.67%;">| <br>
+                                                <span class="marker">15</span>
+                                            </span>
+                                            <span class="tick" style="left: 83.34%;">| <br>
+                                                <span class="marker">17.5</span>
+                                            </span>
+                                            <span class="tick" style="left: 100%;">| <br>
+                                                <span class="marker">20</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Interest Rate slider section ends -->
+                                    <!-- Loan Tenure slider section starts -->
+                                    <div class="col-md-12 mt-100">
+                                        <div class="row form-group lterm flex-display align-items-center">
+                                            <label class="col-6 s-18 w-500 control-label" for="loanterm">Select EMI
+                                                option</label>
+                                            <div class="col-6">
+                                                <div class="loantermwrapper">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend d-none">
+                                                            <label class="s-14 input-group-text">
+                                                                <input type="radio" class="mr-5" name="loantenure"
+                                                                    id="loanyears" value="loanyears" tabindex="4"
+                                                                    autocomplete="off"><span class="s-14">Yr</span>
+                                                            </label>
+                                                        </div>
+                                                        <input class="form-control custm-box-2 w-400" id="loanterm"
+                                                            name="loanterm" value="20" type="text">
+                                                        <div class="input-group-prepend">
+                                                            <label class="s-14 input-group-text months-input">
+                                                                <input type="radio" class="mr-5 d-none"
+                                                                    name="loantenure" id="loanmonths" value="loanmonths"
+                                                                    tabindex="5" autocomplete="off" checked="checked">
+                                                                <span class="s-14">Months</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="loantermslider"></div>
+                                        <div id="loantermsteps" class="steps">
+                                            <span class="tick" style="left: 0%;">| <br>
+                                                <span class="marker">0</span>
+                                            </span>
+                                            <span class="tick" style="left: 16.67%;">| <br>
+                                                <span class="marker">5</span>
+                                            </span>
+                                            <span class="tick" style="left: 33.33%;">| <br>
+                                                <span class="marker">10</span>
+                                            </span>
+                                            <span class="tick" style="left: 50%;">| <br>
+                                                <span class="marker">15</span>
+                                            </span>
+                                            <span class="tick" style="left: 66.67%;">| <br>
+                                                <span class="marker">20</span>
+                                            </span>
+                                            <span class="tick" style="left: 83.33%;">| <br>
+                                                <span class="marker">25</span>
+                                            </span>
+                                            <span class="tick" style="left: 100%;">| <br>
+                                                <span class="marker">30</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Loan Tenure slider section ends -->
+                                </div>
+                            </div>
+                            <input id="loanproduct" name="loanproduct" value type="hidden">
+                            <input id="loanstartdate" name="loanstartdate" value type="hidden">
+                            <input id="loanyearformat" name="loanyearformat" value type="hidden">
+                            <input id="loandata" name="loandata" value type="hidden">
+                            <input id="calcversion" name="calcversion" value=4.0 type="hidden">
+                        </form>
+                        <div class="row gutter-left gutter-right d-none">
+                            <div id="emipaymentsummary" class="col-sm-5 col-md-6 no-gutter-left no-gutter-right">
+                                <div id="emiamount">
+                                    <h4>Loan EMI</h4>
+                                    <p>₹ <span>24,959</span>
+                                    </p>
+                                </div>
+                                <div id="emitotalinterest">
+                                    <h4>Total Interest Payable</h4>
+                                    <p>₹ <span>34,90,279</span>
+                                    </p>
+                                </div>
+                                <div id="emitotalamount" class="column-last">
+                                    <h4>Total Payment <br>(Principal + Interest) </h4>
+                                    <p>₹ <span>59,90,279</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="emipiechart"
+                                class="d-none no-gutter-left no-gutter-right col-sm-7 col-md-6 highcharts-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- display none graph and list of emi's start --}}
+                <div id="emipaymentdetails" class="d-none">
+                    <form class="gutter-left gutter-right form-horizontal">
+                        <div class="row form-group" id="emipaymentscheduleheader">
+                            <label class="col-md-4 col-lg-5 control-label" for="startmonthyear">Schedule showing EMI
+                                payments starting from</label>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="input-group">
+                                    <input class="form-control" id="startmonthyear" name="startmonthyear" value
+                                        type="text">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 form-group lyearformat">
+                                <select class="form-control" tabindex="15" name="yearformat" id="yearformat">
+                                    <option value="calendaryear" selected="selected">Calendar Year wise</option>
+                                    <option value="financialyear">Financial Year wise</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="emibarchart" class="hidden-ts highcharts-container"></div>
+                    <div id="emipaymenttable"></div>
+                </div>
+                {{-- display none graph and list of emi's end --}}
+                <div class="col-md-5 order-last order-md-2 emi-details">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="p-4 text-center border-bottom">
+                                <h6 class="card-title mb-3">Your monthly instalment:</h6>
+                                <h2 class="mb-0 text-center s-40 color--purple-500" id="emiamount">₹<span>888</span>
+                                </h2>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted s-15">Total interest</span>
+                                    <span id="emitotalinterest">₹<span>656</span></span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted s-15">Principal amount</span>
+                                    <span id="principalamount">₹<span>10,000</span></span>
+                                </div>
+                                <hr style="border:1px dashed grey">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <span class="s-16">Total amount</span>
+                                    <span id="emitotalamount">₹<span>10,000</span></span>
+                                </div>
+                                <a href="{{ route('loan.agent.main') }}"
+                                    class="btn btn--green-400 hover--tra-black w-100">Apply for loan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- eligibility calculator ends -->
+{{--<hr class="divider">--}}
 
 <!-- Quick and swift steps section starts -->
 <section class="py-80 ct-04 content-section division bg--green-100">
@@ -412,8 +748,7 @@
             </div>
             <div class="col-md-6 order-last order-md-2">
                 <div class="img-block mb-0">
-                    <img src="{{ asset('front/images/how-it-works.png') }}" alt="rightborrow"
-                        class="img-fluid p-0 w-100">
+                    <img src="{{ asset('front/images/how-it-works.png') }}" alt="rightborrow" class="img-fluid p-0 w-100">
                 </div>
             </div>
         </div>
@@ -422,6 +757,7 @@
 <!-- Quick and swift steps section end -->
 
 
+ 
 <!-- eligibility calculator starts -->
 <section id="features-21" class="py-80 features-section division">
     <div class="container">
@@ -678,6 +1014,7 @@
 <!-- eligibility calculator ends -->
 {{--<hr class="divider">--}}
 
+ 
 <!-- Testimonioals section starts -->
 <section id="reviews-1" class="pt-0 pb-80 reviews-section">
     <div class="container">
@@ -703,116 +1040,119 @@
 <!-- Contact Start -->
 <section id="contact" class="pt-0 pb-80">
     <div class="container">
-        <div class="bg--green-100 rounded-3">
-            <div class="row align-items-center justify-content-center p-4">
-                <div class="col-md-6 col-12 order-md-1 order-1 mb-md-0 mb-4">
-                    <div class="sec-title2 mb-30">
-                        <h2 class="s-28 mb-5">Let's Get In <span class="color--green-500">Touch</span></h2>
-                        <p class="description mt-0">Have any questions or need help? Send us a message, and we will
-                            contact
-                            you shortly.</p>
-                    </div>
-                    <div class="row gy-3 gx-3">
-                        <div class="col-md-12 col-12">
-                            <div class="address-item">
-                                <div class="address-text">
-                                    <h6 class="color--green-500"> Customer Support </h6>
-                                    <p class="address-txt"><a
-                                            href="tel:{{ str_ireplace(" ","",env('COMPANY_MOBILE')) }}">{{ env('COMPANY_MOBILE') }}</a>
-                                    </p>
+        <div class="col-md-12 col-lg-12">
+            <div class="section-title mb-40">
+                <h2 class="s-28 mb-5">Let's Get In <span class="color--green-500">Touch</span></h2>
+                <p class="description mt-0">Have any questions or need help? Send us a message, and we will
+                    contact
+                    you shortly.</p>
+            </div>
+        </div>
+        <div class="row rounded-3 row-main-contact g-3">
+            <div class="col-md-6 col-12 order-md-1 order-2 rounded-3">
+                <div class="contact-left">
+                    <div class="contact-overlay"></div>
+                    <div class="contact-form-left">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="address-item">
+                                    <div class="address-text">
+                                        <h6 class="color--green-500 mb-1 s-16"> Customer Support </h6>
+                                        <p class="address-txt mt-0"><a
+                                                href="tel:{{ str_ireplace(" ","",env('COMPANY_MOBILE')) }}">{{ env('COMPANY_MOBILE') }}</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 col-12">
-                            <div class="address-item">
-                                <div class="address-text">
-                                    <h6 class="color--green-500"> Mail Us </h6>
-                                    <p class="address-txt"><a
-                                            href="mailto:{{ str_ireplace(" ","",env('COMPANY_SUPPORT_MAIL')) }}">{{ env('COMPANY_SUPPORT_MAIL') }}</a>
-                                    </p>
+                            <div class="col-md-6 col-12">
+                                <div class="address-item">
+                                    <div class="address-text">
+                                        <h6 class="color--green-500 mb-1 s-16"> Mail Us </h6>
+                                        <p class="address-txt mt-0"><a
+                                                href="mailto:{{ str_ireplace(" ","",env('COMPANY_SUPPORT_MAIL')) }}">{{ env('COMPANY_SUPPORT_MAIL') }}</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 col-12">
-                            <div class="address-item">
-                                <div class="address-text">
-                                    <h6 class="color--green-500"> Address </h6>
-                                    <p class="address-txt">{{ env('COMPANY_ADDRESS') }}</p>
+                            <div class="col-md-6 col-12">
+                                <div class="address-item">
+                                    <div class="address-text">
+                                        <h6 class="color--green-500 mb-1 s-16"> Address </h6>
+                                        <p class="address-txt mt-0">{{ env('COMPANY_ADDRESS') }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 col-12">
-                            <div class="address-item">
-                                <div class="address-text">
-                                    <h6 class="color--green-500"> Working Hours </h6>
-                                    <p class="address-txt">
-                                        Monday to Saturday: 10:00 AM - 5:00 PM<br>
-                                        Sunday: Closed</p>
+                            <div class="col-md-6 col-12">
+                                <div class="address-item">
+                                    <div class="address-text">
+                                        <h6 class="color--green-500 mb-1 s-16"> Working Hours </h6>
+                                        <p class="address-txt mt-0">
+                                            Monday to Saturday: 10:00 AM - 5:00 PM<br>
+                                            Sunday: Closed</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 md-mb-50 order-md-2 order-2">
-                    <div class="h-100">
-                        <div class="card shadow border h-100">
-                            <div class="card-body">
-                                <p class="w-400 mb-20">
-                                    Fill out the form below and you'll hear from us soon.
-                                </p>
-                                <form method="post" action="{{ route('front.contact.us.store') }}"
-                                    class="contact-form career-form" enctype="multipart/form-data">
-                                    <div class="row gx-2 gy-2">
-                                        <div class="col-md-6 col-12">
-                                            <div class="form-group form-floating s-15">
-                                                <input id="form_name" name="fullname" type="text"
-                                                    class="form-control name mb-0" placeholder="">
-                                                <label for="firstname">Full Name *</label>
-                                            </div>
-                                            @component('components.ajax-error',['field'=>'fullname'])@endcomponent
+            </div>
+            <div class="col-md-6 col-12 md-mb-50 order-md-2 order-1">
+                <div class="h-100">
+                    <div class="card h-100 border-0 shadow bg-white">
+                        <div class="card-body">
+                            <p class="w-400 mb-20">
+                                Fill out the form below and you'll hear from us soon.
+                            </p>
+                            <form method="post" action="{{ route('front.contact.us.store') }}"
+                                class="contact-form career-form" enctype="multipart/form-data">
+                                <div class="row gx-2 gy-2">
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group form-floating">
+                                            <input id="form_name" name="fullname" type="text"
+                                                class="form-control name mb-0" placeholder="">
+                                            <label for="firstname">Full Name *</label>
                                         </div>
-                                        <div class="col-md-6 col-12">
-                                            <div class="form-group form-floating">
-                                                <input id="form_mobile" type="text" name="mobile"
-                                                    class="numeric-input mb-0 form-control mobile" placeholder=""
-                                                    minlength="10" maxlength="10" inputmode="numeric">
-                                                <label for="form_mobile">Mobile *</label>
-                                            </div>
-                                            @component('components.ajax-error',['field'=>'mobile'])@endcomponent
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <div class="form-group form-floating">
-                                                <input id="form_email" type="email" name="email"
-                                                    class="mb-0 form-control email" placeholder="">
-                                                <label for="form_email">Email *</label>
-                                            </div>
-                                            @component('components.ajax-error',['field'=>'email'])@endcomponent
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <div class="form-group form-floating">
-                                                <input id="form_subject" type="text" name="subject"
-                                                    class="mb-0 form-control subject" placeholder="">
-                                                <label for="form_subject">Subject *</label>
-                                            </div>
-                                            @component('components.ajax-error',['field'=>'subject'])@endcomponent
-                                        </div>
-                                        <div class="col-md-12 col-12">
-                                            <div class="form-group form-floating">
-                                                <textarea id="form_message" name="desc"
-                                                    class="mb-0 form-control message" placeholder=""
-                                                    style="height: 150px"></textarea>
-                                                <label for="form_message">Message *</label>
-                                            </div>
-                                            @component('components.ajax-error',['field'=>'desc'])@endcomponent
-                                        </div>
-                                        <div class="col-md-12 col-12 text-start">
-                                            <button type="submit"
-                                                class="s-14 btn btn--green-400 hover--tra-black submit"
-                                                id="submit-btn">Submit Request</button>
-                                        </div>
+                                        @component('components.ajax-error',['field'=>'fullname'])@endcomponent
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group form-floating">
+                                            <input id="form_mobile" type="text" name="mobile"
+                                                class="numeric-input mb-0 form-control mobile" placeholder=""
+                                                minlength="10" maxlength="10" inputmode="numeric">
+                                            <label for="form_mobile">Mobile *</label>
+                                        </div>
+                                        @component('components.ajax-error',['field'=>'mobile'])@endcomponent
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group form-floating">
+                                            <input id="form_email" type="email" name="email"
+                                                class="mb-0 form-control email" placeholder="">
+                                            <label for="form_email">Email *</label>
+                                        </div>
+                                        @component('components.ajax-error',['field'=>'email'])@endcomponent
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group form-floating">
+                                            <input id="form_subject" type="text" name="subject"
+                                                class="mb-0 form-control subject" placeholder="">
+                                            <label for="form_subject">Subject *</label>
+                                        </div>
+                                        @component('components.ajax-error',['field'=>'subject'])@endcomponent
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="form-group form-floating">
+                                            <textarea id="form_message" name="desc" class="mb-0 form-control message"
+                                                placeholder="" style="height: 150px"></textarea>
+                                            <label for="form_message">Message *</label>
+                                        </div>
+                                        @component('components.ajax-error',['field'=>'desc'])@endcomponent
+                                    </div>
+                                    <div class="col-md-12 col-12 text-start">
+                                        <button type="submit" class="s-14 btn btn--green-400 hover--tra-black submit"
+                                            id="submit-btn">Submit Request</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -820,7 +1160,9 @@
         </div>
     </div>
 </section>
-<!-- Contact End -->
+
+
+
 
 {{-- Wlecome message modal show here --}}
 @if($msg->status == 1)
