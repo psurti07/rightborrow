@@ -435,8 +435,6 @@
 }
 /* proccess step */
  
-
- 
 .application-process .tag {
     display: inline-block;
     background: rgba(13, 76, 146, 0.1);
@@ -448,14 +446,12 @@
     margin-bottom: 15px;
 }
 
- 
 
 .application-process .process-steps {
     max-width: 700px;
     margin: auto;
     position: relative;
 }
-
 
 .application-process .process-steps::before {
     content: "";
@@ -467,7 +463,6 @@
     background: #dbe7f5;
 }
 
-
 .application-process .step {
     display: flex;
     align-items: flex-start;
@@ -476,11 +471,9 @@
     margin-bottom: 35px;
 }
 
-
 .application-process .step:last-child {
     margin-bottom: 0;
 }
-
 
 .application-process .step-number {
     width: 50px;
@@ -499,7 +492,6 @@
     transition: .3s ease;
 }
 
-
 .application-process .step-content {
     background: #fff;
     padding: 18px 22px;
@@ -509,18 +501,14 @@
     transition: .3s ease;
 }
 
-
 .application-process .step-content h4 {
     margin: 0 0 8px;
     color: #1e293b;
-    font-size: 18px;
 }
 
 
 .application-process .step-content p {
-    margin: 0;
     color: #64748b;
-    font-size: 14px;
 }
 
 
@@ -534,8 +522,6 @@
     border-color: #1b4577;
     color: #fff;
 }
-
- 
 
 
 .application-process .step .step-content {

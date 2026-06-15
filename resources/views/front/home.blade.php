@@ -289,15 +289,14 @@
 <!-- Our Partners section end  -->
 
 
-<!-- <section class="application-process pt-80 pb-0">
+ <section class="application-process pt-80 pb-0">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
                 <div class="section-title mb-40">
-                       <h2 class="s-28 mb-5"> Get Your Loan Approved In <span class="color--green-500">5 Easy Steps</span>
+                       <h2 class="s-28 mb-5"> Your Loan Journey <span class="color--green-500">Starts Here</span>
                     </h2>
-                    <p class="s-16 color--grey mt-0"> A quick and seamless journey to help you get the best loan offers
-                        without hassle.</p>
+                    <p class="s-16 color--grey mt-0">Get access to suitable loan offers in a few easy steps.</p>
                 </div>
             </div>
         </div>
@@ -305,41 +304,41 @@
             <div class="step">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h4>Loan Details</h4>
-                    <p>Enter loan amount and requirements.</p>
+                    <h4 class="s-18 w-700">Select Loan Amount</h4>
+                    <p class="m-0">Choose how much funding you require.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h4>Personal Details</h4>
-                    <p>Provide your basic information.</p>
+                    <h4 class="s-18 w-700">Submit Your Details</h4>
+                    <p class="m-0">Provide personal and professional information.</p>
                 </div>
             </div>
             <div class="step current">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h4>Unlock Offers</h4>
-                    <p>View eligible loan offers instantly.</p>
+                    <h4 class="s-18 w-700">Unlock Loan Offers</h4>
+                    <p class="m-0">Instantly see eligible loan options.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h4>Purchase Plan</h4>
-                    <p>Select the plan that suits you best.</p>
+                    <h4 class="s-18 w-700">Compare and Choose</h4>
+                    <p class="m-0">Pick the plan with the best repayment terms.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">5</div>
                 <div class="step-content">
-                    <h4>Personalized Offers</h4>
-                    <p>Receive customized financing options.</p>
+                    <h4 class="s-18 w-700">Get Approved Fast</h4>
+                    <p class="m-0">Complete the process and receive your loan.</p>
                 </div>
             </div>
         </div>
     </div>
-</section> -->
+</section> 
 
 <!-- Products Intro section starts -->
 <section id="products" class="py-80 features-section division">
@@ -756,10 +755,6 @@
 </section>
 <!-- Quick and swift steps section end -->
 
-
- 
-
- 
 <!-- Testimonioals section starts -->
 <section id="reviews-1" class="py-80 reviews-section">
     <div class="container">
