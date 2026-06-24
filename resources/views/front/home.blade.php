@@ -131,7 +131,7 @@
                             <div id="sb-5-1" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
                                 <div class="fbox-ico ico-50">
                                     <div class="shape-ico color--theme">
-                                        <img src="http://127.0.0.1:8000/front/images/Happy-Customer.png"
+                                        <img src="{{ asset('front/images/Happy-Customer.png') }}"
                                             alt="rightborrow" class="img-fluid">
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                             <div id="sb-5-3" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
                                 <div class="fbox-ico ico-50">
                                     <div class="shape-ico color--theme">
-                                        <img src="http://127.0.0.1:8000/front/images/disbursal.png" alt="rightborrow"
+                                        <img src="{{ asset('front/images/disbursal.png') }}" alt="rightborrow"
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                             <div id="sb-5-2" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
                                 <div class="fbox-ico ico-50">
                                     <div class="shape-ico color--theme">
-                                        <img src="http://127.0.0.1:8000/front/images/NBFC-Partners.png"
+                                        <img src="{{ asset('front/images/NBFC-Partners.png') }}"
                                             alt="rightborrow" class="img-fluid">
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@
                             <div id="sb-5-4" class="text-center d-flex bg--green-100 p-4 rounded-3 w-100">
                                 <div class="fbox-ico ico-50">
                                     <div class="shape-ico color--theme">
-                                        <img src="http://127.0.0.1:8000/front/images/Digital-Process.png"
+                                        <img src="{{ asset('front/images/Digital-Process.png') }}"
                                             alt="rightborrow" class="img-fluid">
                                     </div>
                                 </div>
