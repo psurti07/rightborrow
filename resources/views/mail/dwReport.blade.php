@@ -215,8 +215,8 @@
                                                                                             </tr>
                                                                                             <tr>
                                                                                                 <td><h5 style="margin:0">{{ $agent->fullname ?? 'RightBorrow Support' }}</h5></td>
-                                                                                                <td><h5 style="margin:0">+91 {{ $agent->mobile ?? '97242 06519' }}</h5></td>
-                                                                                                <td><h5 style="margin:0">{{ $agent->emailid ?? 'info@ailoans.com' }}</h5></td>
+                                                                                                <td><h5 style="margin:0">+91 {{ $agent->mobile ?? '93718 27272' }}</h5></td>
+                                                                                                <td><h5 style="margin:0">{{ $agent->emailid ?? 'info@rightborrow.com' }}</h5></td>
                                                                                             </tr>
                                                                                         </table>
                                                                                     </td>

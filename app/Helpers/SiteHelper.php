@@ -224,7 +224,7 @@ if (!function_exists('raiseRequestFaqs')) {
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                  We request you to kindly call the company on +91-{#VAR#} between 10 AM to 5 PM- Monday to Saturday (only business days). Allow us to discuss your concerns, and we will ensure that you get the best possible solutions.
+                                  We request you to kindly call the company on +91-93718-27272 between 10 AM to 5 PM- Monday to Saturday (only business days). Allow us to discuss your concerns, and we will ensure that you get the best possible solutions.
                                 </p>
                             </div>
                         </div>
@@ -531,7 +531,7 @@ if (!function_exists('sendBrevoHtmlMail')) {
     function sendBrevoHtmlMail($maildata, $subject = '', $message = '', $sendmail = '', $attachmentPath = '')
     {
         $data['sender']['name'] = env('APP_NAME');
-        $data["sender"]["email"] = 'info@ailoans.com';
+        $data["sender"]["email"] = 'info@rightborrow.com';
 
         $user_res["name"] = $maildata["fullname"];
         $user_res["email"] = $maildata["email"];
@@ -589,7 +589,7 @@ if (!function_exists('sendBrevoHtmlMail2')) {
     function sendBrevoHtmlMail2($maildata, $subject = '', $message = '', $sendmail = '', $attachments = [])
     {
         $data['sender']['name'] = env('APP_NAME');
-        $data["sender"]["email"] = 'info@ailoans.com';
+        $data["sender"]["email"] = 'info@rightborrow.com';
 
         $user_res["name"] = $maildata["fullname"];
         $user_res["email"] = $maildata["email"];
