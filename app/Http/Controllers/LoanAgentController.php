@@ -1655,10 +1655,7 @@ class LoanAgentController extends Controller
             Log::info("orderid : " . $orderId);
 
             // Keep SAME route (IMPORTANT)
-            $returnUrl = route('api.loan.agent.offer2Response', [
-                'orderId' => $orderId,
-                'token'   => 'razorpay'
-            ]);
+            $returnUrl = route('api.loan.agent.offer2Response');
 
             // Save DB (same as your logic)
             $offer = DB::table('cardoffer')->updateOrInsert(
@@ -1672,6 +1669,21 @@ class LoanAgentController extends Controller
                     'amount'     => $grandAmount,
                 ]
             );
+
+            $cardofferRecord = DB::table('cardoffer')->where('mobile', $buyerPhone)->first();
+
+            // ✅ CREATE RAZORPAY ENTRY RECORD
+            $razorpayEntry = RazorpayEntry::create([
+                'rec_date'     => now(),
+                'entryfor'     => 2,
+                'userid'       => $cardofferRecord->id,
+                'orderid'      => $orderId,
+                'orderamount'  => $grandAmount,
+                'ordernote'    => 'elite-offer',
+                'referenceid'  => null,
+                'txstatus'     => 'PENDING',
+                'paymentmode'  => null,
+            ]);
 
             return response()->json([
                 'type' => 'SUCCESS',
@@ -2260,97 +2272,91 @@ class LoanAgentController extends Controller
             $inputs = $request->all();
             $request->validate([
                 'first_name' => 'required',
-                'last_name' => 'required',
-                'email' => 'required|email',
-                'mobile' => ['required', 'numeric', 'regex:/^[6-9]\d{9}$/']
+                'last_name'  => 'required',
+                'email'      => 'required|email',
+                'mobile'     => ['required', 'numeric', 'regex:/^[6-9]\d{9}$/']
             ]);
-            /* first check in user registration */
+
             $profile = $this->checkUserProcess($inputs);
             if ($profile) {
                 return response()->json($profile);
             } else {
                 $buyerFirstName = $inputs['first_name'];
-                $buyerLastName = $inputs['last_name'];
-                $buyerPhone = $inputs['mobile'];
-                $buyerEmail = $inputs['email'];
-                $buyerCountry = 'India';
+                $buyerLastName  = $inputs['last_name'];
+                $buyerPhone     = $inputs['mobile'];
+                $buyerEmail     = $inputs['email'];
             }
-            /* product Data */
-            $products = Product::where('productslug', env('LA_OFFER_4'))->first();
-            // Log::info('products - '.json_encode($products));
 
-            /* set amount of offer */
+            $products = Product::where('productslug', config('constant.LA_OFFER_4'))->first();
+
             $amount = ($products->inOffer == 1) ? $products->offeramount : $products->amount;
-            $grandAmount = number_format($amount + ($amount * 0.18), 2);
+            $grandAmount = $amount + ($amount * 0.18);
 
             $uatNumbers = explode(',', env('UAT_MOBILE_NUMBERS', '')); // Convert the string into an array
 
             foreach ($uatNumbers as $uatNum) {
                 if ($uatNum == $buyerPhone) {
-                    $grandAmount = 10;
+                    $grandAmount = 1;
                     break; // Exit the loop once a match is found
                 }
             }
 
-            /* ORDER & TOKEN */
-            $response = createMerchantToken();
-            $orderid  = "PAYGIC" . number_format(microtime(true) * 1000, 0, '.', '');
-            $taxNote     = '';
-            $token = $response['data']['token'];
+            // Razorpay works in paise
+            $razorAmount = (int) round($grandAmount * 100);
 
-            $returnUrl = route('api.loan.agent.offer4Response', [
-                'orderId' => $orderid,
-                'token'   => $token
-            ]);
-
-            $postData = [
-                'mid' => env('PAYGIC_MERCHANT_ID'),
-                'merchantReferenceId' => $orderid,
-                'amount' => $grandAmount,
-                'customer_mobile' => $buyerPhone,
-                'customer_name' => $buyerFirstName . ' ' . $buyerLastName,
-                'customer_email' => $buyerEmail,
-                'redirect_URL' => $returnUrl,
-                'failed_URL' => $returnUrl,
+            // Create Razorpay Order
+            $orderData = [
+                'receipt' => 'order_' . time(),
+                'amount' => $razorAmount,
+                'currency' => 'INR'
             ];
 
-            $createresponse = createPaymentPage($postData, $token);
-            $post_data = json_decode($createresponse, true);
+            $razor = generateRazorpayOrder($orderData);
+            $orderId = $razor->id;
+            Log::info("orderid : " . $orderId);
 
-            $offerId = DB::table('cardoffer')->updateOrInsert(
-                ['mobile' => $buyerPhone], // Search condition
-                [ // Values to update or insert
-                    'rec_date' => date('Y-m-d H:i:s'),
-                    'offerpage' => 8, //big offer or LA offer 4
+            // Keep SAME route (IMPORTANT)
+            $returnUrl = route('api.loan.agent.offer4Response');
+
+            // Save DB (same as your logic)
+            $offer = DB::table('cardoffer')->updateOrInsert(
+                ['mobile' => $buyerPhone],
+                [
+                    'rec_date'   => now(),
+                    'offerpage'  => 8,
                     'first_name' => $buyerFirstName,
-                    'last_name' => $buyerLastName,
-                    'emailid' => $buyerEmail,
-                    'amount' => $grandAmount,
-                    'isCustomer' => 0,
-                    'isActive' => 0,
-                    'isDelete' => 0,
+                    'last_name'  => $buyerLastName,
+                    'emailid'    => $buyerEmail,
+                    'amount'     => $grandAmount,
                 ]
             );
-            $record = DB::table('cardoffer')->where('mobile', $buyerPhone)->first();
 
-            /* PAYGIC LOG */
-            $paygicData = array(
-                'rec_date'    => now(),
-                'entryfor'    => 10, // la offer 4 or big offer
-                'userid'      => $record->id,
-                'orderid'     => $orderid,
-                'orderamount' => $grandAmount,
-                'ordernote'   => $taxNote,
-                'referenceid' => null,
-                'txstatus'    => null,
-                'paymentmode' => null
-            );
-            $response = PaygicEntry::create($paygicData);
+            $cardofferRecord = DB::table('cardoffer')->where('mobile', $buyerPhone)->first();
+
+            // ✅ CREATE RAZORPAY ENTRY RECORD
+            $razorpayEntry = RazorpayEntry::create([
+                'rec_date'     => now(),
+                'entryfor'     => 8,
+                'userid'       => $cardofferRecord->id,
+                'orderid'      => $orderId,
+                'orderamount'  => $grandAmount,
+                'ordernote'    => 'big-offer',
+                'referenceid'  => null,
+                'txstatus'     => 'PENDING',
+                'paymentmode'  => null,
+            ]);
 
             return response()->json([
                 'type' => 'SUCCESS',
-                'message' => 'Please wait we are redirecting...',
-                'redirect' => $post_data['data']['payPageUrl'],
+                'message' => 'Redirecting...',
+                'redirect' => route('razorpay.page', [
+                    'order_id' => $orderId,
+                    'amount'   => $razorAmount,
+                    'name'     => $buyerFirstName . ' ' . $buyerLastName,
+                    'email'    => $buyerEmail,
+                    'mobile'   => $buyerPhone,
+                    'returnUrl' => $returnUrl
+                ])
             ]);
         } catch (ValidationException $e) {
             return response()->json(array('type' => 'ERROR', 'errors' => $e->errors()), 422);
@@ -2360,28 +2366,54 @@ class LoanAgentController extends Controller
         }
     }
 
-    public function offer4Response(Request $request, $orderId, $token)
+    public function offer4Response(Request $request)
     {
         try {
-            //dd($request->all());
-            $inputs = $request->all();
+
+            $input = $request->all();
             $meta = selfApplyMeta();
 
-            $createresponse = checkPaymentStatus($orderId, $token);
-            $response_data = json_decode($createresponse, true);
+            // Razorpay credentials
+            $api = new Api(config('services.razorpay.key'), config('services.razorpay.secret'));
 
-            $grandtotal = $netamount = $cgstamount = $sgstamount = $igstamount = 0;
-            $paymentdata = PaygicEntry::where('orderid', $response_data['data']['merchantReferenceId'])->firstOrFail();
+            $razorpay_payment_id = $input['razorpay_payment_id'] ?? null;
+            $razorpay_order_id   = $input['razorpay_order_id'] ?? null;
+            $razorpay_signature  = $input['razorpay_signature'] ?? null;
+
+            if (!$razorpay_payment_id || !$razorpay_order_id || !$razorpay_signature) {
+                Log::error('Missing Razorpay Data', $input);
+
+                return view('cardoffer-response', [
+                    'meta' => $meta,
+                    'response' => FALSE,
+                ]);
+            }
+
+            // ✅ Verify Signature
+            $attributes = [
+                'razorpay_order_id' => $razorpay_order_id,
+                'razorpay_payment_id' => $razorpay_payment_id,
+                'razorpay_signature' => $razorpay_signature
+            ];
+
+            try {
+                $api->utility->verifyPaymentSignature($attributes);
+                $status = 'SUCCESS';
+            } catch (\Exception $e) {
+                $status = 'FAILED';
+            }
+
+            $paymentdata = RazorpayEntry::where('orderid', $razorpay_order_id)->first();
 
             // Update Paygic log
-            PaygicEntry::where('id', $paymentdata->id)->update([
+            RazorpayEntry::where('id', $paymentdata->id)->update([
                 'rec_date'     => now(),
-                'referenceid'  => $response_data['data']['paygicReferenceId'],
-                'txstatus'     => $response_data['txnStatus'],
+                'referenceid'  => $razorpay_payment_id,
+                'txstatus'     => $status,
                 'paymentmode'  => '',
             ]);
 
-            if ($response_data['txnStatus'] == 'SUCCESS') {
+            if ($status == 'SUCCESS') {
                 $userData = Cardoffer::where('id', $paymentdata->userid)->first();
                 $cardno = random_code_num(16);
 
@@ -2390,7 +2422,7 @@ class LoanAgentController extends Controller
                     'card_number' => $cardno,
                     'registration_date' => date('Y-m-d'),
                     'expiry_date' => date('Y-m-d', strtotime('+9 months')),
-                    'paymentid' => $response_data['data']['paygicReferenceId'],
+                    'paymentid' => $razorpay_payment_id,
                     'isActive' => 1
                 );
 

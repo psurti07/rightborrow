@@ -199,11 +199,9 @@
                         $(this).attr("disabled", false);
                         if (result.type === 'SUCCESS') {
                             toastr.success(result.message);
-                            $('#result-container').html(result.html);
-
                             setTimeout(function() {
-                                document.frm1.submit();
-                            }, 1000);
+                                window.location.href = result.url;
+                            }, 5000);
                         } else {
                             setTimeout(function() {
                                 window.location.reload();
