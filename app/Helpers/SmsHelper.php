@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 if(!function_exists('sendSingleSMS')){
     function sendSingleSMS($mobile, $otp, $panel = 'self'){
-        $message = "Hello, the RightBorrow OTP for your mobile number registration is ".$otp.". Kindly do not share it with anyone. Thanks, RightBorrow";
+        $message = "Hello, the Right Borrow OTP for your mobile number registration is ".$otp.". Kindly do not share it with anyone. Thanks, Right Borrow";
         // URL encode the message
        // URL encode the message
         $sms_text = urlencode($message);
@@ -31,6 +31,7 @@ if(!function_exists('sendSingleSMS')){
         // Submit the request to the server
         $response = Http::get($api_url);
 
+        Log::info("SMS Response: " . $response);
         // Return the response
         return [
             'status_code' => $response->status(),
@@ -69,7 +70,7 @@ if(!function_exists('sendDynamicSMS')){
         // Submit the request to the server
         $response = Http::get($api_url);
 
-        Log::info($response);
+        Log::info("Dynamic SMS Response: " . $response);
         // Return the response
         return [
             'status_code' => $response->status(),
