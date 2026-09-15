@@ -68,8 +68,8 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12 align-items-center m-auto self-apply-form  mb-lg-0 mb-3">
                 <div id="hero-8-form" class="border border-primary r-06">
-                    <h4 class="s-20 w-700 mb-2">Apply in <span class="color--green-500">5 Minutes</span></h4>
-                    <p class="s-16">Get instant pre-approved offers.</p>
+                    <h4 class="s-20 w-700 mb-2">Quick & Simple <span class="color--green-500">Online Application</span></h4>
+                    <p class="s-16">Explore Loan Options That Match Your Needs</p>
 
                     <form method="post" action="{{ route('loan.agent.send.otp') }}" class="request-form save-form-1 needs-validation" novalidate>
                         <div class="row g-2">
@@ -275,17 +275,16 @@
                 <div class="form-holder">
                     <div class="contact-form-notice">
                         <p class="s-14">
-                            <strong>Important Disclosure : </strong> Rightborrow Private Limited is a service provider that connects users with third-party banks and NBFCs and does not provide loans directly. The repayment tenure for personal loans typically ranges from a minimum of 6 months to a maximum of 60 months (5 years), depending on the lender. The maximum Annual Percentage Rate (APR) can go up to 34.5% per annum, inclusive of applicable charges, depending on the applicant’s profile and lender policies.
-                        </p>
-                        <p class="s-14">Important Note: BE AWARE! We ask our customers to make payments ONLY on our website <<WEBSITE LINK>> and NOT through any other source, directly or indirectly. Thanks!</p>
-                        <p class="s-14">
-                            For example, if a user takes a loan of ₹5,00,000 at an interest rate of 12% per annum for 60 months, the processing fee may be up to 2% (₹10,000), the EMI would be approximately ₹11,122, the total interest payable would be around ₹1,67,320, and the total repayment amount would be approximately ₹6,67,320. All figures are indicative. Actual loan terms may vary depending on eligibility and lender criteria.
+                            <strong>Important Note : </strong> We ask our customers to make payments ONLY on our website rightborrow.com and NOT through any other source, directly or indirectly.
                         </p>
                         <p class="s-14">
-                            <strong>Disclaimer : </strong>Rightborrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify all details and read the terms and conditions of the respective lender before proceeding.The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
+                            <strong>Disclaimer : </strong>Rightborrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.
                         </p>
                         <p class="s-14">
-                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile: {{ env('COMPANY_MOBILE') }} | Email: {{ env('INFO_EMAIL') }}
+                            <strong>Pre-Application Note : </strong> Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
+                        </p>
+                        <p class="s-14">
+                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> <strong>Mobile:</strong> {{ env('COMPANY_MOBILE') }} | <strong>Email:</strong> {{ env('INFO_EMAIL') }}
                         </p>
                     </div>
                 </div>
