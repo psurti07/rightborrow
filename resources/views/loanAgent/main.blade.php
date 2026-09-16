@@ -184,7 +184,7 @@
             </div>
         </div>
         <div class="fbox-wrapper text-center">
-            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col mb-lg-0 mb-2">
                     <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
                         <div class="fbox-ico ico-50">
@@ -210,20 +210,6 @@
                         <div class="fbox-txt">
                             <h4 class="s-18 w-700">Completely Online Process</h4>
                             <p>From eligibility check to document submission, everything happens digitally.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-lg-0 mb-2">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border h-100">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                             <img src="{{ asset('front/images/Self-Apply-Feature.png') }}" alt="rightborrow"
-                                    class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Self-Apply Feature</h4>
-                            <p>Take control of your finances while enjoying the benefits of excellent provisions.</p>
                         </div>
                     </div>
                 </div>

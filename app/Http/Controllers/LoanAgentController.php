@@ -820,22 +820,22 @@ class LoanAgentController extends Controller
                         );
                         $api_response = sendOrderData(json_encode($remote_data));
 
-                        $redRoute = 'loan-agent/paymentSuccess'; // Row was updated
+                        $redRoute = 'agent/paymentSuccess'; // Row was updated
                     } else {
-                        $redRoute = 'loan-agent/paymentFailed'; // No rows were updated
+                        $redRoute = 'agent/paymentFailed'; // No rows were updated
                     }
                     return redirect($redRoute);
                 } else {
-                    return redirect("loan-agent/paymentSuccess");
+                    return redirect("agent/paymentSuccess");
                 }
             } else if ($txStatus == "PAYMENT_FAILURE") {
-                return redirect("loan-agent/paymentFailed");
+                return redirect("agent/paymentFailed");
             } else {
-                return redirect("loan-agent/paymentFailed");
+                return redirect("agent/paymentFailed");
             }
         } catch (\Exception $e) {
             Log::info($e->getMessage());
-            return redirect("loan-agent/paymentFailed");
+            return redirect("agent/paymentFailed");
         }
     }
 
@@ -1000,7 +1000,7 @@ class LoanAgentController extends Controller
                             'payout_amount' => $netamount * env('CU_PAYOUT_RATIO'),
                             'order_amount' => $netamount
                         );*/
-                    $response4 = 'loan-agent/paymentFailed';
+                    $response4 = 'agent/paymentFailed';
                     /* wp campaign */
                     /*$user = UserTree::where('subuserid', $userData->userid)
                             ->orderBy('id', 'desc')
@@ -1086,13 +1086,13 @@ class LoanAgentController extends Controller
                     $api_response = sendOrderData(json_encode($remote_data));
                 }
                 if ($response2 > 0) {
-                    $redRoute = 'loan-agent/paymentSuccess'; // Row was updated
+                    $redRoute = 'agent/paymentSuccess'; // Row was updated
                 } else {
-                    $redRoute = 'loan-agent/paymentFailed'; // No rows were updated
+                    $redRoute = 'agent/paymentFailed'; // No rows were updated
                 }
                 return redirect($redRoute);
             } else {
-                return redirect("loan-agent/paymentFailed");
+                return redirect("agent/paymentFailed");
             }
             /*} else {
                 Log::info('else checksum not matched');
@@ -1177,7 +1177,7 @@ class LoanAgentController extends Controller
                         'zip' => $userData->pincode,
                         'orderid' => $orderId,
                         'odamount' => $orderData->orderamount,
-                        'sourceurl' => 'https://RightBorrow.com/loan-agent/paymentSuccess'
+                        'sourceurl' => 'https://RightBorrow.com/agent/paymentSuccess'
                     );
 
                     if ($fbleads) {
