@@ -42,6 +42,18 @@
         rel="stylesheet" />
     @include('stacks.css.selfapply.style')
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18431884677"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18431884677');
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VJ0TFB11Z"></script>
     <script>
