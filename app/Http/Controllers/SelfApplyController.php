@@ -119,7 +119,7 @@ class SelfApplyController extends Controller
                         'utm_campaign' => Cookie::get('utm_campaign'),
                         'utm_medium' => Cookie::get('utm_medium'),
                         'utm_referral' => Cookie::get('utm_referral'),
-                        'source_id' => Cookie::get('sourceId'),
+                        'source_id' => session('sourceId'),
                         'client_ip' => $request->ip()
                     ]);
 
@@ -128,7 +128,7 @@ class SelfApplyController extends Controller
                         DB::table('fb_ads_entry')->insertGetId([
                             'rec_date' => now(),
                             'userid' => $user->id,
-                            'fbclid' => Cookie::get('sourceId')
+                            'fbclid' => session('sourceId')
                         ]);
                     }
 
@@ -253,7 +253,7 @@ class SelfApplyController extends Controller
                     'utm_campaign' => Cookie::get('utm_campaign'),
                     'utm_medium' => Cookie::get('utm_medium'),
                     'utm_referral' => Cookie::get('utm_referral'),
-                    'source_id' => Cookie::get('sourceId'),
+                    'source_id' => session('sourceId'),
                     'client_ip' => $request->ip()
                 ]);
 
@@ -261,7 +261,7 @@ class SelfApplyController extends Controller
                 $fbid = DB::table('fb_ads_entry')->insertGetId([
                     'rec_date' => now(),
                     'userid' => $userid,
-                    'fbclid' => Cookie::get('sourceId')
+                    'fbclid' => session('sourceId')
                 ]);
                 // fb ends code
 
