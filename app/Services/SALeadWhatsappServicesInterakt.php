@@ -54,7 +54,7 @@ class SALeadWhatsappServicesInterakt
                             ->orderBy('r.id', 'asc')
                             ->get();
                         
-                        $adminUsers = ['9408881214','9974360572'];
+                        $adminUsers = ['9371827272'];
                         Log::info($adminUsers);
                         if($users->isNotEmpty()){
                             $data1 = array(
