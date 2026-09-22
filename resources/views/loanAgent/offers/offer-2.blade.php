@@ -20,9 +20,8 @@
             </div>
             <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-lg-0 mb-35">
                 <div id="hero-8-form" class="r-06">
-                    <h4 class="s-22 text-dark mb-1"> Get Loan up to <span class="color--green-500">&#8377;10
-                            LAKHS</span> from Affiliate NBFCs!</h4>
-                    <p class="s-14">Unlock Your Personalized Pre-Approved Loan Offers</p>
+                    <h4 class="s-22 text-dark mb-1"> Explore Personal Loan Options up to <span class="color--green-500">&#8377;10 LAKHS</span></h4>
+                    <p class="s-14">Check Your Eligibility</p>
 
                     <form method="post" class="request-form save-form-1" action="{{ route('loan.agent.get.offer2') }}">
                         <div class="row g-2">
@@ -166,25 +165,23 @@
 </section>
 <!-- Testimonials section ends  -->
 
-<section class="py-2 shape--06 gr--smoke reviews-section">
+<section class="py-20 shape--06 gr--smoke">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-md-12 col-lg-12 col-xl-12">
                 <div class="form-holder">
                     <div class="contact-form-notice">
                         <p class="s-14">
-                            <strong>APR Calculation:</strong> Range of Loan tenure is up to 72 months with Annual
-                            Interest Rates ranging between 11% - 36% and the processing fee up to 2%. For Example:
-                            Taking in consideration a personal loan of Rs.1,00,000 availed at 11%* interest rate for a
-                            tenure of 6* years with 2%* processing fee, the APR will be 11.75%*. *T&C Apply. All these
-                            numbers are tentative/indicative, the final loan specifics may vary depending upon the
-                            customer profile and NBFCs' criteria, rules & regulations, and terms &amp; conditions.
+                            <strong>Important Note : </strong> We ask our customers to make payments ONLY on our website Rightborrow.com and NOT through any other source, directly or indirectly.
                         </p>
-
                         <p class="s-14">
-                            <strong>Important Note:</strong> BE AWARE! We ask our customers to make payments ONLY on our
-                            website https://RightBorrow.com and NOT through any other source, directly or indirectly.
-                            Thanks!
+                            <strong>Disclaimer : </strong>Rightborrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.
+                        </p>
+                        <p class="s-14">
+                            <strong>Pre-Application Note : </strong> Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
+                        </p>
+                        <p class="s-14">
+                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> <strong>Mobile:</strong> {{ env('COMPANY_MOBILE') }} | <strong>Email:</strong> {{ env('INFO_EMAIL') }}
                         </p>
                     </div>
                 </div>

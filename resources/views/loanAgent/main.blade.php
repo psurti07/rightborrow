@@ -364,7 +364,7 @@
 </script>
 
 <script>
-    const sendOtpUrl = @json(route('self.apply.send.otp'));
+    const sendOtpUrl = @json(route('loan.agent.send.otp'));
 </script>
 <!-- write or link your script file and script tag here -->
 <script src="{{ asset('front/js/loanAgent.js') }}"></script>
