@@ -59,7 +59,7 @@ class LALeadWhatsappServices
                         // Log::info($users->getBindings());
                         // Log::info($users->count());
                         // dd('check log');
-                        $adminUsers = ['7016318366','9408881214','9998807547'];
+                        $adminUsers = ['6358141826','9023987358','8787498489','8128858228'];
                         
                         if($users->isNotEmpty()){
                             foreach ($adminUsers as $admin) {

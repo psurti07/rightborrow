@@ -891,7 +891,7 @@ class SelfApplyController extends Controller
                 } else {
                     $igstamount = round($netamount * 0.18);
                 }
-                $grandtotal = round($netamount + $cgstamount + $sgstamount + $igstamount);
+                $grandtotal = floor($netamount + $cgstamount + $sgstamount + $igstamount);
 
                 $invoiceNo = SiteOption::where('option_key', 'newinvoiceno')
                     ->select('option_value')
