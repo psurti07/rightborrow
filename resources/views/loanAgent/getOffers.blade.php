@@ -121,7 +121,7 @@ body {
                                             <div class="fbox-ico">
                                                 <div class="shape-ico">
                                                     <img class="p-0"
-                                                        src="https://manage.rightborrow.com/upload/banks/{{ $offersData[0]['bank_image'] }}"
+                                                        src="https://manage.rightborrow.com/public/upload/banks/{{ $offersData[0]['bank_image'] }}"
                                                         alt="bank" width="160">
                                                 </div>
                                             </div> <!-- End Icon -->
@@ -164,7 +164,7 @@ body {
                                             <div class="fbox-ico">
                                                 <div class="shape-ico">
                                                     <img class="p-0"
-                                                        src="https://manage.rightborrow.com/upload/banks/{{ $item['bank_image'] }}"
+                                                        src="https://manage.rightborrow.com/public/upload/banks/{{ $item['bank_image'] }}"
                                                         alt="bank" width="160">
                                                 </div>
                                             </div> <!-- End Icon -->
