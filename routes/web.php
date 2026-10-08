@@ -170,6 +170,13 @@ Route::get('/razorpay-page', function (Illuminate\Http\Request $request) {
     ]);
 })->name('razorpay.page');
 
+Route::get('/cashfree-checkout', function (Illuminate\Http\Request $request) {
+    return view('pg.cashfree-checkout', [
+        'pay_session_id' => $request->pay_session_id,
+        'paymode' => $request->paymode
+    ]);
+})->name('pg.cashfree-checkout');
+
 Route::group([
     'prefix' => '/offers',
     'as' => 'offer.'

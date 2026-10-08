@@ -4,10 +4,10 @@
     if(!function_exists('getCashfreePaymentUrl')){
         function getCashfreePaymentUrl($csurl, $data){
             $cust_data = array(
-                "customer_id" => $data['customer_id'],
-                "customer_phone" => $data['customer_phone'],
-                "customer_name" => $data['customer_name'],
-                "customer_email" => $data['customer_email']
+                "customer_id"    => (string) $data['customer_id'],
+                "customer_phone" => (string) $data['customer_phone'],
+                "customer_name"  => (string) $data['customer_name'],
+                "customer_email" => (string) $data['customer_email'],
             );
 
             $return_data = array(
@@ -42,13 +42,15 @@
                     "x-client-secret: " . env('CASHFREE_SECRET_KEY')
                 ]
             ]);
-
+            Log::info('Cashfree Payment URL Request: ' . $data_req2);
             $response = curl_exec($curl);
             $err = curl_error($curl);
             curl_close($curl);
 
+            Log::info('Cashfree Payment URL Response: ' . $response);
             if ($err) {
-                return "cURL Error #:" . $err;
+                Log::error('cURL Error #:' . $err);
+                return false;
             } else {
                 return json_decode($response);
             }

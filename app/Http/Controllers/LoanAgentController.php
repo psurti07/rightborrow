@@ -43,7 +43,7 @@ use Razorpay\Api\Api;
 class LoanAgentController extends Controller
 {
     public $lifetime;
-    
+
     public function __construct()
     {
         $this->lifetime = config('session.lifetime');
@@ -1629,6 +1629,207 @@ class LoanAgentController extends Controller
             $products = Product::where('productslug', config('constant.LA_OFFER_2'))->first();
 
             $amount = ($products->inOffer == 1) ? $products->offeramount : $products->amount;
+            $grandAmount = round($amount + ($amount * 0.18), 2);
+            $uatNumbers = explode(',', env('UAT_MOBILE_NUMBERS', '')); // Convert the string into an array
+
+            foreach ($uatNumbers as $uatNum) {
+                if ($uatNum == $buyerPhone) {
+                    $grandAmount = 1;
+                    break; // Exit the loop once a match is found
+                }
+            }
+
+            $orderId = 'CFREE_' . number_format(microtime(true) * 1000, 0, '.', '');
+
+            $returnUrl = route('api.loan.agent.offer2Response', ['orderid' => $orderId]);
+
+            // Save DB (same as your logic)
+            $offer = DB::table('cardoffer')->updateOrInsert(
+                ['mobile' => $buyerPhone],
+                [
+                    'rec_date'   => now(),
+                    'offerpage'  => 4,
+                    'first_name' => $buyerFirstName,
+                    'last_name'  => $buyerLastName,
+                    'emailid'    => $buyerEmail,
+                    'amount'     => round($grandAmount, 2),
+                ]
+            );
+
+            $cardofferRecord = DB::table('cardoffer')->where('mobile', $buyerPhone)->first();
+            $offerId = $cardofferRecord->id;
+        
+            if (env('CASHFREE_MODE') == "PROD") {
+                $curlurl = 'https://api.cashfree.com/pg/orders';
+                $paymode = 'production';
+            } else {
+                dd('sandbox');
+                $curlurl = 'https://sandbox.cashfree.com/pg/orders';
+                $paymode = 'sandbox';
+            }
+
+            $orderAmount = number_format((float) $grandAmount, 2, '.', '');
+            
+            $data_res = array(
+                "order_id" => $orderId,
+                "order_amount" => $orderAmount,
+                "order_note" => "elite-offer",
+                "customer_id" => $offerId,
+                "customer_name" => $buyerFirstName . ' ' . $buyerLastName,
+                "customer_phone" => $buyerPhone,
+                "customer_email" => $buyerEmail,
+                "returnUrl" => $returnUrl
+            );
+            
+            $payurl = getCashfreePaymentUrl($curlurl, $data_res);
+
+            if (!$payurl || empty($payurl->payment_session_id)) {
+                Log::error('Cashfree payment session creation failed.', [
+                    'response' => $payurl
+                ]);
+
+                return response()->json([
+                    'type' => 'ERROR',
+                    'message' => 'Unable to create Cashfree payment session. Please try again.'
+                ], 500);
+            }
+
+            $pay_sess_url = $payurl->payment_session_id;
+
+            $cashfreedata = array(
+                'rec_date' => now(),
+                'entryfor' => 4,
+                'userid' => $offerId,
+                'orderid' => $orderId,
+                'orderamount' => round($grandAmount, 2),
+                'ordernote' => 'elite-offer'
+            );
+
+            $res = CashFreeEntry::create($cashfreedata);
+
+            return response()->json([
+                'type' => 'SUCCESS',
+                'message' => 'Redirecting...',
+                'redirect' => route('pg.cashfree-checkout', [
+                    'pay_session_id' => $pay_sess_url,
+                    'paymode' => $paymode
+                ])
+            ]);
+        } catch (ValidationException $e) {
+            return response()->json(array('type' => 'ERROR', 'errors' => $e->errors()), 422);
+        } catch (\Exception $e) {
+            Log::info($e->getMessage());
+            return response()->json(['type' => 'ERROR', 'message' => 'Oops! Something went wrong.']);
+        }
+    }
+
+    public function offer2Response(Request $request, $orderid)
+    {
+        try {
+
+            $orderid = $request->query('orderid');
+    
+            $input = $request->all();
+            $meta = selfApplyMeta();
+
+            $grandtotal = $netamount = $cgstamount = $sgstamount = $igstamount = 0;
+            if (isset($orderid)) {
+                if (env('CASHFREE_MODE') == "PROD") {
+                    $curlurl = 'https://api.cashfree.com/pg/orders/' . $orderid . '/payments';
+                } else {
+                    $curlurl = 'https://sandbox.cashfree.com/pg/orders/' . $orderid . '/payments';
+                }
+                $orderdata = getOrderData($curlurl);
+
+                if ($orderdata) {
+                    $orderid = $orderdata[0]->order_id;
+                    $txstatus = $orderdata[0]->payment_status;
+                    $referenceid = $orderdata[0]->cf_payment_id;
+                    $paymentmode = $orderdata[0]->payment_group;
+                    $orderamount = $orderdata[0]->order_amount;
+
+                    $paymentdata = CashFreeEntry::where('orderid', $orderid)->firstOrFail();
+
+                    $cashfreedata = array(
+                        'rec_date' => now(),
+                        'referenceid' => $referenceid,
+                        'txstatus' => $txstatus,
+                        'paymentmode' => $paymentmode
+                    );
+
+                    $res = CashFreeEntry::where('id', $paymentdata->id)->update($cashfreedata);
+
+                    if ($txstatus == 'SUCCESS') {
+                        $userData = Cardoffer::where('id', $paymentdata->userid)->first();
+                        $cardno = random_code_num(16);
+
+                        $data = array(
+                            'rec_date' => date('Y-m-d H:i:s'),
+                            'card_number' => $cardno,
+                            'registration_date' => date('Y-m-d'),
+                            'expiry_date' => date('Y-m-d', strtotime('+9 months')),
+                            'paymentid' => $referenceid,
+                            'isActive' => 1
+                        );
+
+                        $response = Cardoffer::where('id', $paymentdata->userid)->update($data);
+
+                        $sent = sendPaymentGreetings($userData->first_name . ' ' . $userData->last_name, $userData->mobile, $userData->emailid);
+
+                        return view('cardoffer-response', [
+                            'meta' => $meta,
+                            'response' => TRUE,
+                        ]);
+                    } else {
+                        return view('cardoffer-response', [
+                            'meta' => $meta,
+                            'response' => FALSE,
+                        ]);
+                    }
+                } else {
+                    Log::info('Order not found');
+                    return view('cardoffer-response', [
+                        'meta' => $meta,
+                        'response' => FALSE,
+                    ]);
+                }
+            } else {
+                Log::info('Order not found');
+                return view('cardoffer-response', [
+                    'meta' => $meta,
+                    'response' => FALSE,
+                ]);
+            }
+        } catch (\Exception $e) {
+            Log::info($e->getMessage());
+            dd('Ops! Something went wrong.');
+        }
+    }
+
+    public function getOffer2_razorpay(Request $request)
+    {
+        try {
+            $inputs = $request->all();
+            $request->validate([
+                'first_name' => 'required',
+                'last_name'  => 'required',
+                'email'      => 'required|email',
+                'mobile'     => ['required', 'numeric', 'regex:/^[6-9]\d{9}$/']
+            ]);
+
+            $profile = $this->checkUserProcess($inputs);
+            if ($profile) {
+                return response()->json($profile);
+            } else {
+                $buyerFirstName = $inputs['first_name'];
+                $buyerLastName  = $inputs['last_name'];
+                $buyerPhone     = $inputs['mobile'];
+                $buyerEmail     = $inputs['email'];
+            }
+
+            $products = Product::where('productslug', config('constant.LA_OFFER_2'))->first();
+
+            $amount = ($products->inOffer == 1) ? $products->offeramount : $products->amount;
             $grandAmount = $amount + ($amount * 0.18);
 
             $uatNumbers = explode(',', env('UAT_MOBILE_NUMBERS', '')); // Convert the string into an array
@@ -1705,7 +1906,7 @@ class LoanAgentController extends Controller
         }
     }
 
-    public function offer2Response(Request $request)
+    public function offer2Response_razorpay(Request $request)
     {
         try {
 
