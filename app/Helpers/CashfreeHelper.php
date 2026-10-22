@@ -42,7 +42,7 @@
                     "x-client-secret: " . env('CASHFREE_SECRET_KEY')
                 ]
             ]);
-            Log::info('Cashfree Payment URL Request: ' . $data_req2);
+            Log::info('Cashfree Payment URL Request: '. $data_req2);
             $response = curl_exec($curl);
             $err = curl_error($curl);
             curl_close($curl);

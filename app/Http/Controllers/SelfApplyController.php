@@ -886,10 +886,10 @@ class SelfApplyController extends Controller
                 $netamount = ($productData->inOffer == 1) ? $productData->offeramount : $productData->amount;
 
                 if ($userData->state == 'Gujarat') {
-                    $cgstamount = round($netamount * 0.09);
-                    $sgstamount = round($netamount * 0.09);
+                    $cgstamount = round($netamount * 0.09, 2);
+                    $sgstamount = round($netamount * 0.09, 2);
                 } else {
-                    $igstamount = round($netamount * 0.18);
+                    $igstamount = round($netamount * 0.18, 2);
                 }
                 $grandtotal = floor($netamount + $cgstamount + $sgstamount + $igstamount);
 

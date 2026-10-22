@@ -37,7 +37,7 @@ Route::post('/loan-agent/great-deal-offer-response',[LoanAgentController::class,
 // Route::post('/loan-agent/elite-offer-response',[LoanAgentController::class, 'offer2Response']);
 Route::get('/loan-agent/elite-offer-response/{orderid}',[LoanAgentController::class, 'offer2Response'])->name('api.loan.agent.offer2Response');
 Route::post('/loan-agent/ultra-saver-offer-response',[LoanAgentController::class, 'offer3Response']);
-Route::get('/loan-agent/big-offer-response',[LoanAgentController::class, 'offer4Response'])->name('api.loan.agent.offer4Response');
+Route::post('/loan-agent/big-offer-response',[LoanAgentController::class, 'offer4Response'])->name('api.loan.agent.offer4Response');
 Route::post('/loan-agent/big-benefit-response',[LoanAgentController::class, 'offer5Response'])->name('api.loan.agent.offer5Response');
 Route::post('/loan-agent/silver-offer-response/{orderid}',[LoanAgentController::class, 'offer6Response'])->name('api.loan.agent.offer6Response');
 

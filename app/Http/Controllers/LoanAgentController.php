@@ -43,7 +43,7 @@ use Razorpay\Api\Api;
 class LoanAgentController extends Controller
 {
     public $lifetime;
-
+    
     public function __construct()
     {
         $this->lifetime = config('session.lifetime');
@@ -950,10 +950,10 @@ class LoanAgentController extends Controller
                 $netamount = ($productData->inOffer == 1) ? $productData->offeramount : $productData->amount;
 
                 if ($userData->state == 'Gujarat') {
-                    $cgstamount = round($netamount * 0.09, 2);
-                    $sgstamount = round($netamount * 0.09, 2);
+                    $cgstamount = round($netamount * 0.09);
+                    $sgstamount = round($netamount * 0.09);
                 } else {
-                    $igstamount = round($netamount * 0.18, 2);
+                    $igstamount = round($netamount * 0.18);
                 }
                 $grandtotal = floor($netamount + $cgstamount + $sgstamount + $igstamount);
                 $invoiceNo = SiteOption::where('option_key', 'newinvoiceno')
@@ -1805,7 +1805,7 @@ class LoanAgentController extends Controller
             dd('Ops! Something went wrong.');
         }
     }
-
+    
     public function getOffer2_razorpay(Request $request)
     {
         try {

@@ -110,7 +110,7 @@ if (!function_exists('nbfcsList')) {
             $data['list'] .= '<div class="col company" data-index="' . $loop . '">
                             <a href="javascript:;" class="in_tool it-1 r-10">
                                 <div class="bg--white-100 block-shadow r-10 mb-20">
-                                    <img class="img-fluid" src="https://manage.rightborrow.com/public/upload/banks/' . $bank->bank_image . '" alt="' . $bank->bank_name . '" width="200">
+                                    <img class="img-fluid" src="https://manage.rightborrow.com/public/upload/banks/' . $bank->bank_image . '" alt="' . $bank->bank_name . '" width="auto">
                                 </div>
                                 <h6 class="s-14 w-700">' . $bank->bank_name . '</h6>
                             </a>
@@ -380,8 +380,6 @@ if (!function_exists('cookieHelper')) {
         Cookie::queue('utm_campaign', $utm_campaign, $lifetime, '/', null, false, true, false, 'lax');
         Cookie::queue('utm_referral', $utm_referral, $lifetime, '/', null, false, true, false, 'lax');
         Cookie::queue('sourceId', $sourceId, $lifetime, '/', null, false, true, false, 'lax');
-
-        session(['sourceId' => $sourceId]);
     }
 }
 
