@@ -20,7 +20,7 @@ class Kernel extends ConsoleKernel
     {
         /*$schedule->command('app:customers-plan-expire')->dailyAt('01:00');*/
         // $schedule->command('sms:sa-lead-cycle')->everyFifteenMinutes();
-        // $schedule->command('sms:la-lead-cycle')->everyFifteenMinutes();
+        $schedule->command('sms:la-lead-cycle')->everyFifteenMinutes();
         // $schedule->command('sms:sa-customer-cycle')->everyFifteenMinutes();
        
         $schedule->command('whatsapp:la-lead-cycle')->everyFifteenMinutes();
